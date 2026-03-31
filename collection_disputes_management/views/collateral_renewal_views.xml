@@ -1,0 +1,59 @@
+<odoo>
+    <!-- Form View -->
+    <record id="view_collateral_renewal_form" model="ir.ui.view">
+        <field name="name">collateral.renewal.form</field>
+        <field name="model">collection_disputes_management.collateral_renewal</field>
+        <field name="arch" type="xml">
+            <form string="Renouvellement de Garantie">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="collateral_id" readonly="1"/>
+                            <field name="registration_reference"/>
+                            <field name="renewal_date"/>
+                            <field name="duration_months"/>
+                        </group>
+                        <group>
+                            <field name="new_expiration_date" readonly="1"/>
+                            <field name="covered_amount"/>
+                            <field name="rank"/>
+                            <field name="obligee_id" options="{'no_create': True}"/>
+                        </group>
+                    </group>
+
+                    <notebook>
+                        <page string="Justification">
+                            <field name="justification"/>
+                            <field name="attachment_ids" widget="many2many_binary" 
+                                context="{'default_res_model': 'collection_disputes_management.collateral_renewal'}"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <!-- List View -->
+    <record id="view_collateral_renewal_tree" model="ir.ui.view">
+        <field name="name">collateral.renewal.list</field>
+        <field name="model">collection_disputes_management.collateral_renewal</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="collateral_id"/>
+                <field name="renewal_date"/>
+                <field name="duration_months"/>
+                <field name="new_expiration_date"/>
+                <field name="covered_amount"/>
+                <field name="rank"/>
+                <field name="obligee_id"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_collateral_renewal" model="ir.actions.act_window">
+        <field name="name">Renouvellements</field>
+        <field name="res_model">collection_disputes_management.collateral_renewal</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

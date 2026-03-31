@@ -1,0 +1,113 @@
+.o_kanban_view.o_customisable_workflow_document_kanban {
+    .o_kanban_card_customisable_workflow_document {
+        height: 8.75rem;
+    }
+    .ribbon {
+        &::before,
+        &::after {
+            display: none;
+        }
+        span {
+            background-color: $o-brand-odoo;
+            padding: 5px;
+            font-size: small;
+            z-index: unset;
+        }
+    }
+    .ribbon-top-right {
+        margin-top: 0px;
+        span {
+            left: 12px;
+            right: 30px;
+            height: 25px;
+            top: 18px;
+        }
+    }
+    .o_kanban_record.oe_kanban_card {
+        padding: 0;
+    }
+    .o_kanban_image {
+        width: 80px;
+    }
+    .o_kanban_record.o_kanban_record_has_image_fill .o_kanban_image {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .o_kanban_image,
+    .o_kanban_image_wrapper {
+        height: 100%;
+        min-height: 80px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+    }
+    .o_kanban_image .o_kanban_image_wrapper {
+        background-color: $gray-200;
+        border-right: 1px solid gray('400');
+    }
+}
+
+.o_kanban_view.o_kanban_ungrouped.o_step_history_kanban .o_kanban_record {
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+.o_kanban_view.o_kanban_ungrouped.o_step_history_kanban {
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+.o_step_history_kanban {
+    margin-left: auto;
+    flex-flow: column wrap;
+    align-self: stretch;
+    align-items: stretch;
+    .o_kanban_renderer {
+        text-align: center;
+        text-transform: uppercase;
+        color: #091124;
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 0;
+        margin-top: 0;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        flex-direction: column;
+        align-content: center !important;
+        .o_kanban_record:not(.o_kanban_ghost) {
+            min-height: $o-statusbar-height;
+            position: relative;
+            padding-left: 5px;
+            font-size: $font-size-sm;
+            margin-bottom: 30px;
+            &:not(:last-child):after {
+                content: "";
+                height: 0px;
+                width: 100%;
+                border-bottom: 30px solid transparent;
+                border-top: 30px solid $gray-300;
+                border-left: calc(var(--KanbanRecord-width) * 0.5) solid transparent;
+                border-right: calc(var(--KanbanRecord-width) * 0.5) solid transparent;
+                bottom: -60px;
+                right: auto;
+                top: auto;
+                left: 0px;
+                position: absolute;
+            }
+        }
+    }
+}
+
+.ribbon span.o_small {
+    font-size: 12px;
+}
+
+.ribbon span {
+    z-index: 1;
+    position: absolute;
+    display: grid;
+    align-items: center;
+    padding: 0 44px;
+    font: 700 18px/1 'Lato', sans-serif;
+}

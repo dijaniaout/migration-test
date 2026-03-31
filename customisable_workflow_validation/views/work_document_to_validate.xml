@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="work_doc_to_validate_form_view" model="ir.ui.view">
+        <field name="name">work_signed_document.view.form</field>
+        <field name="model">customisable_workflow_validation.work_doc_to_validate</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button icon="fa-stamp" string="Valider" 
+                            name="validate" type="object" class="btn-primary" 
+                            invisible="context.get('preview') or not current_user_can_act"/>
+                    <button icon="fa-stamp" string="Rejeter" 
+                            name="reject" type="object" class="btn-danger" 
+                            invisible="context.get('preview') or not current_user_can_act"/>
+                    <field name="current_user_can_act" invisible="1"/>
+                    <field name="state" invisible="1"/>
+                </header>
+                <sheet>
+                    <field name="source_image" widget="image" nolabel="1" invisible="source_image == False"/>
+                    <field name="source_pdf" widget="pdf_viewer" nolabel="1" invisible="source_pdf == False"/>
+                    <field name="source_text" nolabel="1" invisible="source_text == False"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

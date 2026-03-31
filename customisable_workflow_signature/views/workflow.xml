@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <record id="customisable_workflow_workflow_view_form_inherit" model="ir.ui.view">
+            <field name="name">customisable_workflow.form.inherit</field>
+            <field name="model">customisable_workflow.workflow</field>
+            <field name="inherit_id"
+                ref="customisable_workflow.customisable_workflow_workflow_view" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="electronic_signature" />
+                    <field name="manual_signature" />
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

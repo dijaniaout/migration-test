@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="customisable_workflow_step_view_tree" model="ir.ui.view">
+            <field name="name">customisable_workflow.tree</field>
+            <field name="model">customisable_workflow.step</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+                    <field name="workflow_id"/>
+                    <field name="is_automatic_step"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="customisable_workflow_step_view_form" model="ir.ui.view">
+            <field name="name">customisable_workflow.form</field>
+            <field name="model">customisable_workflow.step</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="workflow_id"/>
+                                <field name="corresponding_state" />
+                            </group>
+                            <group>
+                                <field name="description"/>
+                                <field name="is_automatic_step"/>
+                                <field name="criticity"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Décisions possibles">
+                                <field name="step_decision_ids">
+                                    <list >
+                                        <field name="name"/>
+                                        <field name="step_id" invisible="1"/>
+                                        <field name="workflow_id" invisible="1"/>
+                                        <field name="target_step_id"/>
+                                        <field name="transition_rule_id"/>
+                                        <field name="need_a_justification"/>
+                                        <field name="sequence" widget="handle"/>
+                                    </list>
+                                </field>
+                            </page>
+                            <page string="Documents">
+                                <group>
+                                    <group>
+                                        <field name="provided_document_ids" widget="many2many_tags" string="Documents à fournir" domain="[('source','=','provided')]"/>
+                                    </group>
+                                    <group>
+                                        <field name="generated_document_ids" widget="many2many_tags" string="Documents à générer" domain="[('source','=','generated')]"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Notifications">
+                                <field name="notification_type_ids" widget="many2many_tags"/>
+                            </page>
+                            <page string='Autorisations'>
+                                <group string="Droit sur les actions">
+                                    <group string="Groupes autorisés">
+                                        <field name="allowed_group_ids" widget="many2many_tags"/>
+                                    </group>
+                                    <group string="Utilisateurs autorisés">
+                                        <field name="allowed_user_ids" widget="many2many_tags"/>
+                                    </group>
+                                </group>
+                                <group string="Droits de modifications">
+                                    <group string="Groupes auxquels l'étape est en lecture seule">
+                                        <field name="readonly_group_ids" widget="many2many_tags"/>
+                                    </group>
+                                    <group >
+                                    </group>
+                                </group>
+                            </page>
+                            <page string='Visibilité'>
+                                <group>
+                                    <group>
+                                        <field name="visible_to_group_ids" widget="many2many_tags"/>
+                                    </group>
+                                    <group>
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="customisable_workflow_step" model="ir.actions.act_window">
+            <field name="name">Etapes de processus</field>
+            <field name="res_model">customisable_workflow.step</field>
+            <field name="view_mode">list,form</field>
+            <field name="context">{}</field>
+        </record>
+
+        <menuitem 
+            id="customisable_workflow_step_menu" 
+            name="Etapes de processus" 
+            parent="menu_customisable_workflow_configuration" 
+            action="customisable_workflow_step" />
+    </data>
+</odoo>

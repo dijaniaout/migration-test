@@ -1,0 +1,50 @@
+<odoo>
+    <record id="view_negotiation_round_form" model="ir.ui.view">
+        <field name="name">negotiation.round.form</field>
+        <field name="model">collection_disputes_base.negotiation_round</field>
+        <field name="arch" type="xml">
+            <form string="Round de négociation">
+                <sheet>
+                    <header>
+                        <field name="state" widget="statusbar" options="{'clickable': true}"/>
+                    </header>
+
+                    <group>
+                        <group>
+                            <field name="name" readonly="state == 'validated'"/>
+                            <field name="limit_rule_id" readonly="state == 'validated'"/>
+                        </group>
+                        <group>
+                            <field name="duree" readonly="state == 'validated'"/>
+                            <field name="remboursement_freq" readonly="state == 'validated'"/>
+                        </group>
+                        <group>
+                            <field name="negotiation_date" readonly="state == 'validated'"/>
+                            <field name="current_value_date" readonly="state == 'validated'"/>
+                        </group>
+                    </group>
+
+                    <notebook>
+                        <page string="Conditions" readonly="state == 'validated'">
+                            <field name="line_ids" readonly="state == 'validated'">
+                                <list editable="bottom" create="false" decoration-danger="limit and agreement_amount &lt; limit">
+                                    <field name="condition_type" />
+                                    <field name="current_value"/>
+                                    <field name="debtor_proposal"/>
+                                    <field name="bank_proposal"/>
+                                    <field name="agreement_amount"/>
+                                    <field name="limit"/>
+                                    <field name="abatement_percent" />
+                                    <field name="max_percentage" />
+                                    <field name="justificatif"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+
+                <chatter/>
+            </form>
+        </field>
+    </record>
+</odoo>

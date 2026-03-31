@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="sn_administrative_division_municipality_tree" model="ir.ui.view">
+            <field name="name">sn_administrative_division.municipality.tree</field>
+            <field name="model">sn_administrative_division.municipality</field>
+            <field name="arch" type="xml">
+                <list string="Communes">
+                    <field name="name"/>
+                </list>
+            </field>
+        </record>
+        <record id="sn_administrative_division_municipality_form" model="ir.ui.view">
+            <field name="name">sn_administrative_division.municipality.form</field>
+            <field name="model">sn_administrative_division.municipality</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                            </group>
+                            <group>
+                                <field name="department_id"/>
+                            </group>
+                        </group>                      
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="sn_administrative_division_municipality_list_action">
+            <field name="name">Communes</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sn_administrative_division.municipality</field>
+            <field name="view_mode">list,form</field>
+        </record>
+        <menuitem name="Communes" id="sn_administrative_division_municipality_menu" parent="sn_administrative_division.menu_configuration"
+              action="sn_administrative_division_municipality_list_action"/>   
+    </data>
+</odoo>

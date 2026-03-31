@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+"access_sn_administrative_division_region_user","access_sn_administrative_division_region_user","model_sn_administrative_division_region","base.group_user",1,1,1,1
+"access_sn_administrative_division_department_user","access_sn_administrative_division_department_user","model_sn_administrative_division_department","base.group_user",1,1,1,1
+"access_sn_administrative_division_municipality_user","access_sn_administrative_division_municipality_user","model_sn_administrative_division_municipality","base.group_user",1,1,1,1

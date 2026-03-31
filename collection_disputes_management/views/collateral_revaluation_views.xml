@@ -1,0 +1,38 @@
+<odoo>
+    <record id="view_collateral_revaluation_form" model="ir.ui.view">
+        <field name="name">collateral.revaluation.form</field>
+        <field name="model">collection_disputes_management.collateral_reevaluation</field>
+        <field name="arch" type="xml">
+            <form string="Réévaluation de Garantie">
+                <sheet>
+                    <group>
+                        <field name="collateral_id" readonly="1"/>
+                        <field name="reevaluation_date"/>
+                        <field name="new_value"/>
+                        <field name="justification"/>
+                        <field name="attachment_ids" widget="many2many_binary" context="{'default_res_model': 'collection_disputes_management.collateral_reevaluation'}"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="view_collateral_revaluation_tree" model="ir.ui.view">
+        <field name="name">collateral.revaluation.list</field>
+        <field name="model">collection_disputes_management.collateral_reevaluation</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="collateral_id"/>
+                <field name="reevaluation_date"/>
+                <field name="new_value"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_collateral_revaluation" model="ir.actions.act_window">
+        <field name="name">Réévaluations</field>
+        <field name="res_model">collection_disputes_management.collateral_reevaluation</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    
+</odoo>

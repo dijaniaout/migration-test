@@ -1,0 +1,4 @@
+docxtpl==0.16.4
+xlsxwriter
+xlrd
+openpyxl

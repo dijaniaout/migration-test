@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_workflow_checklist_checklist_response_form" model="ir.ui.view">
+            <field name="name">workflow_checklist.checklist_response.form</field>
+            <field name="model">workflow_checklist.checklist_response</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <field name="decision" invisible="True" />
+                        <button name="action_valid" string="Valider"
+                            type="object" class="oe_highlight"
+                            invisible="state != 'draft'" />
+                        <field name="state" widget="statusbar"
+                            statusbar_visible="draft,valid" />
+                    </header>
+                    <sheet>
+                        <widget name="web_ribbon" title="Accepté" bg_color="bg-success"
+                            invisible="decision != 'accepted'"/>
+                        <widget name="web_ribbon" title="Rejeté" bg_color="bg-danger"
+                            invisible="decision != 'rejected'"/>
+                        <widget name="web_ribbon" title="Ajourné" bg_color="bg-warning"
+                            invisible="decision != 'adjourned'"/>
+                        <group>
+                            <group>
+                                <field name="document_id"/>
+                                <field name="checklist_id"/>
+                            </group>
+                            <group>
+                                <field name="step_id"/>
+                                <field name="checker_ids" widget="many2many_tags" readonly="state != 'draft'"/>
+                                <field name="total_scores" readonly="True" invisible="state == 'draft'"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="attachment_ids" widget="many2many_binary" readonly="state != 'draft'"/>
+                        </group>
+                        <notebook>
+                            <page name="check_response" string="Checklist">
+                                <field name="check_response_ids" readonly="state != 'draft'">
+                                    <list editable="top" create="0" delete="0">
+                                        <field name="check_id" readonly="1"/>
+                                        <field name="type_response" readonly="1"/>
+                                        <field name="maximum_score"/>
+                                        <field name="note" readonly="type_response != 'note'"/>
+                                        <field name="yes_or_no" readonly="type_response != 'yes_or_no'"/>
+                                        <field name="choice_id" readonly="type_response != 'multiple_choices'"/>
+                                        <field name="field_value" readonly="1"/>
+                                        <field name="comment"/>
+                                    </list>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                        <field name="activity_ids"/>
+                    </div>
+                  </form>
+            </field>
+        </record>
+    </data>
+</odoo>

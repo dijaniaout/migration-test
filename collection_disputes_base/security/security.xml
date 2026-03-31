@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Agent du service juridique -->
+    <record id="group_legal_agent" model="res.groups">
+        <field name="name">Agent du service juridique</field>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        <field name="comment">
+            CRUD sur les dossiers, lecture seule sur les objets de configuration.
+        </field>
+    </record>
+
+    <!-- Responsable du Domaine Recouvrement et Contentieux -->
+    <record id="group_recovery_manager" model="res.groups">
+        <field name="name">Responsable du Domaine Recouvrement et Contentieux</field>
+        <field name="implied_ids" eval="[(4, ref('collection_disputes_base.group_legal_agent'))]"/>
+        <field name="comment">
+            Hérite des droits Agent du service juridique.
+        </field>
+    </record>
+
+    <!-- Directeur du Département des Affaires Juridiques -->
+    <record id="group_legal_director" model="res.groups">
+        <field name="name">Directeur du Département des Affaires Juridiques</field>
+        <field name="implied_ids" eval="[(4, ref('collection_disputes_base.group_legal_agent'))]"/>
+        <field name="comment">
+            Hérite des droits Agent du service juridique.
+        </field>
+    </record>
+
+    <!-- IT MANAGER -->
+    <record id="group_it_manager" model="res.groups">
+        <field name="name">IT MANAGER</field>
+        <field name="implied_ids" eval="[
+            (4, ref('base.group_user')),
+            (4, ref('base.group_system'))
+        ]"/>
+        <field name="comment">
+            Implique également Administrateur (droits d'accès) et Paramètres techniques.
+        </field>
+    </record>
+
+</odoo>

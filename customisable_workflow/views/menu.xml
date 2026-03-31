@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem name="Processus de traitement" id="menu_customisable_workflow_configuration" parent="base.menu_administration"/>
+    </data>
+</odoo>

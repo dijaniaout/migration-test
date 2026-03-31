@@ -1,0 +1,49 @@
+.o_customisable_workflow_report-event-documents {
+    border-right: 2px solid $gray-700;
+    &:first-child {
+        border-left: 2px solid $gray-700;
+    }
+}
+.o_customisable_workflow_report-event-group {
+    width: calc(#{$o-kanban-small-record-width} + 2 * #{$o-kanban-group-padding});
+    flex: 0 0 auto;
+    padding: 0 $o-kanban-group-padding $o-kanban-group-padding $o-kanban-group-padding;
+    background-color: inherit;
+    .group_title {
+        flex: 1 1 auto;
+        text-overflow: ellipsis;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .events {
+        width: 100%;
+        .history_indication {
+            box-shadow: rgba(33, 37, 44, 0.4) 5px 5px, 
+            rgba(33, 37, 44, 0.3) 10px 10px, 
+            rgba(33, 37, 44, 0.2) 15px 15px;
+        }
+        .last-event {
+            position: relative;
+            .history-toggler {
+                position: absolute;
+                bottom: -32px;
+                left: -15px;
+                color: #714B67;
+                font-weight: 600;
+                cursor: zoom-in;
+                .open-history {
+                    display: flex;
+                    flex-direction: row;
+                }
+                .fa {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}
+.slide-hidden {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+}

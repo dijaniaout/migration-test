@@ -1,0 +1,129 @@
+<odoo>
+    <record id="view_collateral_form" model="ir.ui.view">
+        <field name="name">collateral.form</field>
+        <field name="model">collection_disputes_management.collateral</field>
+        <field name="arch" type="xml">
+            <form string="Garantie">
+                <sheet>
+                    <header>
+                        <field name="state" widget="statusbar" statusbar_visible="valid,expired"/>
+                    </header>
+
+                    <div class="oe_button_box" name="button_box">
+                        <button type="object" name="action_open_renewals"
+                                class="oe_stat_button" icon="fa-calendar" invisible="not to_renew">
+                            <field name="renewal_count" widget="statinfo" string="Renouvellements"/>
+                        </button>
+                        <button type="object" name="action_open_reevaluations"
+                                class="oe_stat_button" icon="fa-calendar">
+                            <field name="reevaluation_count" widget="statinfo" string="Réévaluations"/>
+                        </button>
+                    </div>
+
+                    <!-- Disposition principale : 2 colonnes -->
+                    <group>
+                        <!-- Colonne gauche -->
+                        <group>
+                            <!-- name retiré -->
+                            <field name="label"/>
+                            <field name="type_id" options="{'no_create': True}"/>
+                            <field name="dispute_case_id" invisible="1"/>
+                        </group>
+
+                        <!-- Colonne droite -->
+                        <group>
+                            <field name="guarantor_ids" widget="many2many_tags"
+                                options="{'no_open': True, 'no_quick_create': True, 'no_create': True}"/>
+                            <field name="obligee_id"/>
+                        </group>
+                    </group>
+
+                    <group>
+                        <!-- Colonne gauche -->
+                        <group>
+                            <field name="constitutive_title_id"/>
+                            <field name="registration_reference"/>
+                        </group>
+
+                        <!-- Colonne droite -->
+                        <group>
+                            <field name="rank"/>
+                            <field name="to_renew"/>
+                            <field name="is_transferable" invisible="1"/>
+                        </group>
+                    </group>
+
+                    <group>
+                        <!-- Colonne gauche -->
+                        <group>
+                            <field name="registration_date"/>
+                            <field name="duration_months"/>
+                            <field name="current_expiration_date"/>
+                            <field name="first_expiration_date"/>
+                            <field name="days_to_expiration" readonly="1"/>
+                        </group>
+
+                        <!-- Colonne droite -->
+                        <group>
+                            <field name="original_value"/>
+                            <field name="current_value"/>
+                        </group>
+                    </group>
+
+                    <notebook>
+                        <page string="Historiques des renouvellements">
+                            <field name="renewal_ids">
+                                <list>
+                                    <field name="renewal_date"/>
+                                    <field name="new_expiration_date"/>
+                                </list>
+                            </field>
+                        </page>
+
+                        <page string="Historiques des réévaluations">
+                            <field name="reevaluation_ids">
+                                <list>
+                                    <field name="reevaluation_date"/>
+                                    <field name="new_value"/>
+                                </list>
+                            </field>
+                        </page>
+
+                        <page string="Transfert de propriété" invisible="is_transferable == False">
+                            <field name="property_transfer_ids"/>
+                        </page>
+                    </notebook>
+                </sheet>
+
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_collateral_tree" model="ir.ui.view">
+        <field name="name">collateral.list</field>
+        <field name="model">collection_disputes_management.collateral</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="label"/>
+                <field name="dispute_case_id" />
+                <field name="type_id"/>
+                <field name="registration_date"/>
+                <field name="first_expiration_date"/>
+                <field name="original_value"/>
+                <field name="current_value"/>
+            </list>
+        </field>
+    </record>
+    <record id="action_collateral" model="ir.actions.act_window">
+        <field name="name">Garanties</field>
+        <field name="res_model">collection_disputes_management.collateral</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <menuitem 
+        id="menu_collateral" 
+        name="Garanties" 
+        parent="menu_collateral_root" 
+        action="action_collateral"/>
+</odoo>

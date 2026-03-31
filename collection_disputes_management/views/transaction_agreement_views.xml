@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <record id="view_transaction_agreement_form" model="ir.ui.view">
+            <field name="name">transaction.agreement.form</field>
+            <field name="model">collection_disputes_management.transaction_agreement</field>
+            <field name="arch" type="xml">
+                <form string="Accord transactionnel">
+
+                    <sheet>
+                        <header>
+                            <button name="action_generate_amortization"
+                                type="object"
+                                string="Générer le Echéances / Paiements"
+                                class="btn-primary"/>
+                            <field name="state"  widget="statusbar" options="{'clickable': '1'}" />
+                        </header>
+                        <group>
+                            <field name="name"/>
+                            <field name="dispute_case_id" invisible="1"/>
+                            <field name="settlement_statement_id" options="{'no_create': True}"/>
+                            <field name="agreement_type" widget="radio"/>
+                            <field name="partner_ids" invisible="agreement_type != 'with_partner'" widget="many2many_tags"/>
+                            <field name="amount_unrecoverable" invisible="1"/>
+                            <field name="amount_to_recover" invisible="1"/>
+                            <field name="total_recovered" invisible="1"/>
+                            <field name="signature_date" />
+                        </group>
+                        <group>
+                            <group string="Dernier arrêté" invisible='not settlement_statement_id'>
+                                <field name="statement_date"/>
+                                <field name="statement_type"/>
+                                <field name="principal_due"/>
+                                <field name="interest_due"/>
+                                <field name="commitment_fees"/>
+                                <field name="late_interest"/>
+                                <field name="agf_fees"/>
+                                <field name="other_fees"/>
+                                <field name="settlement_total_due"/>
+                            </group>
+
+                            <group string="Accord transactionnel">
+                                <field name="principal"/>
+                                <field name="interest_rate"/>
+                                <field name="late_interest_rate"/>
+                                <field name="interest"/>
+                                <field name="commitment_fees_agreement"/>
+                                <field name="late_interest_agreement"/>
+                                <field name="agf_fees_agreement"/>
+                                <field name="other_fees_agreement"/>
+                                <field name="duree"/>
+                                <field name="remboursement_freq"/>
+                                <field name="forfaitary_payment_amount"/>
+                                <field name="forfaitary_payment_due_date"/>
+                                <field name="amortization_type"/>
+                                <field name="first_payment_date"/>
+                                <field name="amount_to_recover_agreement" />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page  string="Termes">
+                                <field name="negotiation_round_ids">
+                                     <list>
+                                        <field name="name"/>
+                                        <field name="negotiation_date"/>
+                                        <field name="state"/>
+                                     </list>   
+                                </field>
+                            </page>
+                            <page string="Documents">
+                                <group name="document_ids">
+                                    <field name="document_ids" widget="many2many_binary" string="Documents"/>
+                                </group>                                
+                            </page>
+                            <page  string="Tableaux d'amortissement">
+                                <field name="amortization_line_ids">
+                                    <list>
+                                        <field name="date"/>
+                                        <field name="principal" sum="Total principal"/>
+                                        <field name="interest"  sum="Total intérêts"/>
+                                         <field name="amount" sum="Total à rembourser"/>
+                                        <field name="paid_amount" sum="Total payé"/>
+                                        <field name="remaining_principal"/>
+                                        <field name="payment_date"/>
+                                        <field name="status"/>
+                                        <field name="currency_id" optional="hide"/>
+                                    </list>
+                                </field>
+                            </page>
+                        </notebook>
+         
+                    </sheet>
+                    <chatter/>
+                </form>
+            </field>
+        </record>
+         <!-- List View -->
+        <record id="view_transaction_agreement_tree" model="ir.ui.view">
+            <field name="name">transaction.agreement.list</field>
+            <field name="model">collection_disputes_management.transaction_agreement</field>
+            <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="dispute_case_id"/>
+                <field name="settlement_statement_id"/>
+                <field name="duree"/>
+                <field name="remboursement_freq"/>
+                <field name="state" />
+            </list>
+            </field>
+        </record>
+
+        <record id="action_transaction_agreement" model="ir.actions.act_window">
+            <field name="name">Accord transactionnel</field>
+            <field name="res_model">collection_disputes_management.transaction_agreement</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <menuitem 
+            name="Accord transactionnel" 
+            id="loan_settlement_statemen_menu" 
+            parent="menu_stakeholders" 
+            action="action_transaction_agreement"/>
+        
+    </data>
+</odoo>

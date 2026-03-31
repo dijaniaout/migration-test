@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem name="Découpage Administratif" id="sn_administrative_division.menu_configuration" parent="base.menu_administration"/>
+    </data>
+</odoo>

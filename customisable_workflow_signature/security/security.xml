@@ -1,0 +1,14 @@
+<odoo>    
+    <data>
+        <record id="generated_document_access_manager_portal" model="ir.rule">
+            <field name="name">Document to sign rights: Portal</field>
+            <field name="model_id" ref="model_customisable_workflow_signature_work_signed_document"/>
+            <field name="domain_force">[('origin_id.allowed_group_ids','in',user.group_ids.ids)]</field>
+            <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_unlink" eval="False"/>
+        </record>
+    </data>    
+</odoo>            

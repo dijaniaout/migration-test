@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_asset_site_user,asset.site user,model_asset_site,base.group_user,1,1,1,1
+access_asset_floor_user,asset.floor user,model_asset_floor,base.group_user,1,1,1,1
+access_asset_inventory,access_asset_inventory,model_asset_inventory,base.group_user,1,1,1,1
+access_asset_inventory_line,access_asset_inventory_line,model_asset_inventory_line,base.group_user,1,1,1,1

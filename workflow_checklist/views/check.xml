@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_workflow_checklist_check_form" model="ir.ui.view">
+            <field name="name">workflow_checklist.check.form</field>
+            <field name="model">workflow_checklist.check</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="maximum_number_of_points"/>
+                            </group>
+                            <group>
+                                <field name="type_response"/>
+                                <field name="field_id" invisible="type_response != 'fields'"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page name="choice" string="Choix Possibles" invisible="type_response != 'multiple_choices'">
+                                <field name="choice_ids">
+                                    <list editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                        <field name="value"/>
+                                    </list>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                  </form>
+            </field>
+        </record>
+    </data>
+</odoo>

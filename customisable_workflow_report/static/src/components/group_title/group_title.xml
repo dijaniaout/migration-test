@@ -1,0 +1,7 @@
+<templates id="template" xml:space="preserve">
+    <t t-name="customisable_workflow_report.GroupTitleWidget">
+        <div class="o_customisable_workflow_report-event-group o_customisable_workflow_report-event-title">
+            <span t-esc="props.title" class="group_title"></span>
+        </div>
+    </t>
+</templates>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="work_report" model="ir.actions.report">
+            <field name="name">work</field>
+            <field name="model">customisable_workflow.work</field>
+            <field name="type">ir.actions.report</field>
+            <field name="report_name">work.docx</field>
+            <field name="report_type">docx</field>
+            <field name="multi">False</field>
+            <field name="binding_model_id" ref="model_customisable_workflow_work"/>
+            <field name="binding_type">report</field>
+            <field name="attachment">'work.pdf'</field>
+            <field name="attachment_use">True</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="department_dakar" model="sn_administrative_division.department">
+            <field name="name">DAKAR</field>
+            <field name="region_id" ref="sn_administrative_division.region_dakar"/>
+        </record>
+        <record id="department_guediewaye" model="sn_administrative_division.department">
+            <field name="name">GUEDIAWAYE</field>
+            <field name="region_id" ref="sn_administrative_division.region_dakar"/>
+        </record>
+        <record id="department_pikine" model="sn_administrative_division.department">
+            <field name="name">PIKINE</field>
+            <field name="region_id" ref="sn_administrative_division.region_dakar"/>
+        </record>
+        <record id="department_rufisque" model="sn_administrative_division.department">
+            <field name="name">RUFISQUE</field>
+            <field name="region_id" ref="sn_administrative_division.region_dakar"/>
+        </record>
+
+        <record id="department_bignona" model="sn_administrative_division.department">
+            <field name="name">BIGNONA</field>
+            <field name="region_id" ref="sn_administrative_division.region_ziguinchor"/>
+        </record>
+        <record id="department_oussouye" model="sn_administrative_division.department">
+            <field name="name">OUSSOUYE</field>
+            <field name="region_id" ref="sn_administrative_division.region_ziguinchor"/>
+        </record>
+        <record id="department_ziguinchor" model="sn_administrative_division.department">
+            <field name="name">ZIGUINCHOR</field>
+            <field name="region_id" ref="sn_administrative_division.region_ziguinchor"/>
+        </record>
+
+
+        <record id="department_bambey" model="sn_administrative_division.department">
+            <field name="name">BAMBEY</field>
+            <field name="region_id" ref="sn_administrative_division.region_diourbel"/>
+        </record>
+        <record id="department_diourbel" model="sn_administrative_division.department">
+            <field name="name">DIOURBEL</field>
+            <field name="region_id" ref="sn_administrative_division.region_diourbel"/>
+        </record>
+        <record id="department_mbacke" model="sn_administrative_division.department">
+            <field name="name">M’BACKE</field>
+            <field name="region_id" ref="sn_administrative_division.region_diourbel"/>
+        </record>
+
+        <record id="department_dagana" model="sn_administrative_division.department">
+            <field name="name">DAGANA</field>
+            <field name="region_id" ref="sn_administrative_division.region_st_louis"/>
+        </record>
+        <record id="department_podor" model="sn_administrative_division.department">
+            <field name="name">PODOR</field>
+            <field name="region_id" ref="sn_administrative_division.region_st_louis"/>
+        </record>
+        <record id="department_st_louis" model="sn_administrative_division.department">
+            <field name="name">SAINT LOUIS</field>
+            <field name="region_id" ref="sn_administrative_division.region_st_louis"/>
+        </record>
+
+
+        <record id="department_bakel" model="sn_administrative_division.department">
+            <field name="name">BAKEL</field>
+            <field name="region_id" ref="sn_administrative_division.region_tambacounda"/>
+        </record>
+        <record id="department_goudiry" model="sn_administrative_division.department">
+            <field name="name">GOUDIRY</field>
+            <field name="region_id" ref="sn_administrative_division.region_tambacounda"/>
+        </record>
+        <record id="department_koupentoum" model="sn_administrative_division.department">
+            <field name="name">KOUPENTOUM</field>
+            <field name="region_id" ref="sn_administrative_division.region_tambacounda"/>
+        </record>
+        <record id="department_tambacounda" model="sn_administrative_division.department">
+            <field name="name">TAMBACOUNDA</field>
+            <field name="region_id" ref="sn_administrative_division.region_tambacounda"/>
+        </record>
+
+        <record id="department_guinguineo" model="sn_administrative_division.department">
+            <field name="name">GUINGUINEO</field>
+            <field name="region_id" ref="sn_administrative_division.region_kaolack"/>
+        </record>
+        <record id="department_kaolack" model="sn_administrative_division.department">
+            <field name="name">KAOLACK</field>
+            <field name="region_id" ref="sn_administrative_division.region_kaolack"/>
+        </record>
+        <record id="department_nioro" model="sn_administrative_division.department">
+            <field name="name">NIORO</field>
+            <field name="region_id" ref="sn_administrative_division.region_kaolack"/>
+        </record>
+
+        <record id="department_mbour" model="sn_administrative_division.department">
+            <field name="name">M’BOUR</field>
+            <field name="region_id" ref="sn_administrative_division.region_thies"/>
+        </record>
+        <record id="department_thies" model="sn_administrative_division.department">
+            <field name="name">THIES</field>
+            <field name="region_id" ref="sn_administrative_division.region_thies"/>
+        </record>
+        <record id="department_tivaouane" model="sn_administrative_division.department">
+            <field name="name">TIVAOUANE</field>
+            <field name="region_id" ref="sn_administrative_division.region_thies"/>
+        </record>
+
+        <record id="department_kebemer" model="sn_administrative_division.department">
+            <field name="name">KEBEMER</field>
+            <field name="region_id" ref="sn_administrative_division.region_louga"/>
+        </record>
+        <record id="department_linguere" model="sn_administrative_division.department">
+            <field name="name">LINGUERE</field>
+            <field name="region_id" ref="sn_administrative_division.region_louga"/>
+        </record>
+        <record id="department_louga" model="sn_administrative_division.department">
+            <field name="name">LOUGA</field>
+            <field name="region_id" ref="sn_administrative_division.region_louga"/>
+        </record>
+
+        <record id="department_fatick" model="sn_administrative_division.department">
+            <field name="name">FATICK</field>
+            <field name="region_id" ref="sn_administrative_division.region_fatick"/>
+        </record>
+        <record id="department_foundiougne" model="sn_administrative_division.department">
+            <field name="name">FOUNDIOUGNE</field>
+            <field name="region_id" ref="sn_administrative_division.region_fatick"/>
+        </record>
+        <record id="department_gossas" model="sn_administrative_division.department">
+            <field name="name">GOSSAS</field>
+            <field name="region_id" ref="sn_administrative_division.region_fatick"/>
+        </record>
+
+        <record id="department_kolda" model="sn_administrative_division.department">
+            <field name="name">KOLDA</field>
+            <field name="region_id" ref="sn_administrative_division.region_kolda"/>
+        </record>
+        <record id="department_medina_yoro_foulah" model="sn_administrative_division.department">
+            <field name="name">MEDINA YORO FOULAH</field>
+            <field name="region_id" ref="sn_administrative_division.region_kolda"/>
+        </record>
+        <record id="department_velingara" model="sn_administrative_division.department">
+            <field name="name">VELINGARA</field>
+            <field name="region_id" ref="sn_administrative_division.region_kolda"/>
+        </record>
+
+        <record id="department_kanel" model="sn_administrative_division.department">
+            <field name="name">KANEL</field>
+            <field name="region_id" ref="sn_administrative_division.region_matam"/>
+        </record>
+        <record id="department_matam" model="sn_administrative_division.department">
+            <field name="name">MATAM</field>
+            <field name="region_id" ref="sn_administrative_division.region_matam"/>
+        </record>
+        <record id="department_ranerou" model="sn_administrative_division.department">
+            <field name="name">RANEROU</field>
+            <field name="region_id" ref="sn_administrative_division.region_matam"/>
+        </record>
+
+        <record id="department_birkelane" model="sn_administrative_division.department">
+            <field name="name">BIRKELANE</field>
+            <field name="region_id" ref="sn_administrative_division.region_kaffrine"/>
+        </record>
+        <record id="department_kaffrine" model="sn_administrative_division.department">
+            <field name="name">KAFFRINE</field>
+            <field name="region_id" ref="sn_administrative_division.region_kaffrine"/>
+        </record>
+        <record id="department_koungheul" model="sn_administrative_division.department">
+            <field name="name">KOUNGHEUL</field>
+            <field name="region_id" ref="sn_administrative_division.region_kaffrine"/>
+        </record>
+        <record id="department_malem_hoddar" model="sn_administrative_division.department">
+            <field name="name">MALEM HODDAR</field>
+            <field name="region_id" ref="sn_administrative_division.region_kaffrine"/>
+        </record>
+
+        <record id="department_kedougou" model="sn_administrative_division.department">
+            <field name="name">KEDOUGOU</field>
+            <field name="region_id" ref="sn_administrative_division.region_kedougou"/>
+        </record>
+        <record id="department_salemata" model="sn_administrative_division.department">
+            <field name="name">SALEMATA</field>
+            <field name="region_id" ref="sn_administrative_division.region_kedougou"/>
+        </record>
+        <record id="department_saraya" model="sn_administrative_division.department">
+            <field name="name">SARAYA</field>
+            <field name="region_id" ref="sn_administrative_division.region_kedougou"/>
+        </record>  
+
+        <record id="department_bounkiling" model="sn_administrative_division.department">
+            <field name="name">BOUNKILING</field>
+            <field name="region_id" ref="sn_administrative_division.region_sedhiou"/>
+        </record> 
+        <record id="department_goudomp" model="sn_administrative_division.department">
+            <field name="name">GOUDOMP</field>
+            <field name="region_id" ref="sn_administrative_division.region_sedhiou"/>
+        </record>
+        <record id="department_sedhiou" model="sn_administrative_division.department">
+            <field name="name">SEDHIOU</field>
+            <field name="region_id" ref="sn_administrative_division.region_sedhiou"/>
+        </record>  
+    </data>
+</odoo>

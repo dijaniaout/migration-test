@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="customisable_workflow_step_decision_view_form" model="ir.ui.view">
+            <field name="name">customisable_workflow_step_decision.form</field>
+            <field name="model">customisable_workflow.step_decision</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="step_id" invisible="1" />
+                                <field name="sequence" />
+                                <field name="workflow_id" invisible="1" />
+                                <field name="name" />
+                                <field name="transition_options" widget="radio" options="{'horizontal': false}"/>
+                                <field name="subprocess_id" invisible="transition_options == 'current_process_step'"/>
+                                <field name="target_step_id" />
+                                <field name="button_visibility_criterion" />
+                            </group>
+                            <group>
+                                <field name="transition_rule_id" />
+                                <field name="need_a_justification" />
+                                <field name="highlight_button" />
+                                <field name="is_manual_decision"
+                                    invisible="transition_rule_id == False" />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="États attendus des documents">
+                                <field name="expected_document_state_ids">
+                                    <list editable="bottom" create="false" delete="false">
+                                        <field name="document_id" />
+                                        <field name="concerned_action" />
+                                        <field name="expected_state" required="1" />
+                                    </list>
+                                </field>
+                            </page>
+                            <page string="Code python">
+                                <field name="python_compute" widget="code"
+                                    options="{'mode': 'python'}" />
+                            </page>
+                            <page string="Assistance">
+                                <p>Les variables suivantes peuvent être utilisées :</p>
+                                <ul>
+                                    <li><code>env</code>: L'environnement sur lequel l'action est
+                                        déclenchée</li>
+                                    <li><code>record</code>: enregistrement sur lequel l'action est
+                                        déclenchée ; peut être void</li>
+                                </ul>
+                                <div>
+                                    <p>Exemple de code Python:</p>
+                                    <pre style='white-space: pre-wrap'>record.button_confirm()</pre>
+                                </div>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

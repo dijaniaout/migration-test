@@ -1,0 +1,260 @@
+<odoo>
+    <record id="view_form_legal_dispute" model="ir.ui.view">
+        <field name="name">collection_disputes_base.legal_dispute.form</field>
+        <field name="model">collection_disputes_base.legal_dispute</field>
+        <field name="arch" type="xml">
+            <form string="Litige">
+                <header>
+                    <field name="current_user_can_act" invisible="1" />
+                    <field name="has_documents_to_give" invisible="1" />
+                    <field name="has_documents_to_generate" invisible="1" />
+                    <field name="current_step_id" widget="statusbar" invisible="1" />
+                    <field name="has_a_justification" invisible="1" />
+                    <field name="visible_step" invisible="1" />
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box"> 
+                        <button type="object"
+                                name="action_open_judicial_decision"
+                                class="oe_stat_button"
+                                icon="fa-balance-scale"
+                                string="Décisions de justice" style="margin-left: 8px;">
+                            <field name="judicial_decision_ids" widget="statinfo" stat="len"/>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Titre ..."  widget="text"/>
+                        </h1>
+                    </div>
+                    <separator/>
+                    <group>
+                        <group>
+                            <field name="base_workflow_id" force_save="1" invisible='1'/>
+                            <field name="workflow_id" force_save="1" readonly='1'/>
+                            <field name="code" />
+                            <field name="date_reception"/>  
+                            <field name="position_banque"  widget="radio" options="{'horizontal': true}"/>
+                        </group>
+                        <group>
+                            <field name="is_not_editable" invisible="1" />
+                            <field name="collection_dispute_case_id" readonly="1" invisible="not collection_dispute_case_id"/>
+                            <field name="type_litige_id"/>
+                            <field name="responsable_id"/>
+                            <field name="substitute_id"/>
+                            <field name="justice_auxiliary_ids" widget="many2many_tags"/>
+                        </group>
+                    </group>
+
+                    <notebook>
+                        <page string="Information">
+                            <group string="Information générale">
+                                <field name="pays_id"/>
+                                <field name="description"/>
+                            </group>
+                            <group string="Informations financières">
+                                <group>
+                                    <field name="currency_id" />
+                                    <field name="total_honorary" readonly='1'/> 
+                                </group>
+                                <group>
+                                    <field name="total_procedure_fee" readonly='1'/>
+                                    <field name="total_additional_fees" readonly='1'/> 
+                                </group>
+                                
+                            </group>
+                        </page>
+                
+                        <page name="interventions_resume" string="Interventions">
+                            <div class="row">
+                                <div class="o_hr_skills_group o_group_resume col-12 d-flex flex-column">
+                                    <field name="justice_intervention_ids"
+                                        widget="resume_one2many"
+                                        mode="list"
+                                        nolabel="1">
+                                        <list>
+                                            <field name="line_type_id"/>
+                                            <field name="name"/>
+                                            <field name="date_start"/>
+                                            <field name="expected_end_date"/>
+                                            <field name="date_end"/>
+                                            <field name="state"/>
+                                        </list>
+                                    </field>
+                                </div>
+                            </div>
+                        </page>
+                        <page string="Frais annexes">
+                            <field name="additional_fee_ids">
+                                <list editable="bottom">
+                                    <field name="date"/>
+                                    <field name="amount"/>
+                                    <field name="fee_type"/>
+                                    <field name="auxiliary_id" invisible="fee_type == 'procedure'"/>
+                                    <field name="attachment_ids" widget="many2many_binary"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page name="documents-events" string="Documents">
+                            <field name="document_event_ids" readonly="1"
+                                widget="document_event_widget" />
+                        </page>
+                         <page name="decision" string="Historique des étapes">
+                            <field name="transition_history_ids" readonly="1">
+                                <kanban create="false" sample="1"
+                                    class="o_field_widget o_step_history_kanban">
+                                    <templates>
+                                        <t t-name="card">
+                                            <div
+                                                class="o_arrow_button oe_kanban_details d-flex justify-content-between flex-column">
+                                                <div class="o_kanban_details_wrapper">
+                                                    <field name="workflow_id" />
+                                                </div>
+                                                <div class="o_kanban_details_wrapper">
+                                                    <field name="step_to_id" />
+                                                </div>
+                                                <div class="o_kanban_record_bottom">
+                                                    <div class="oe_kanban_bottom_left">
+                                                        <field name="date" widget="date" />
+                                                    </div>
+                                                    <div class="oe_kanban_bottom_right">
+                                                        <field name="user_id"
+                                                            widget="many2one_avatar_user" />
+                                                    </div>
+                                                </div>
+                                                <div class="o_kanban_details_wrapper"
+                                                    attrs="{'invisible': [('justification', '=', False)]}">
+                                                    <span>justification: </span>
+                                                    <field name="justification" />
+                                                </div>
+                                            </div>
+                                        </t>
+                                    </templates>
+                                </kanban>
+                            </field>
+                        </page>
+                       
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_legal_dispute" model="ir.ui.view">
+        <field name="name">collection_disputes_base.legal_dispute.list</field>
+        <field name="model">collection_disputes_base.legal_dispute</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="date_reception"/>
+                <field name="responsable_id"/>
+                <field name="substitute_id"/>
+                <field name="type_litige_id"/>
+                <field name="position_banque"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- ===== KANBAN ===== -->
+    <record id="view_kanban_legal_dispute" model="ir.ui.view">
+        <field name="name">collection_disputes_base.legal_dispute.kanban</field>
+        <field name="model">collection_disputes_base.legal_dispute</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="responsable_id" class="o_kanban_small_column">
+                <templates>
+                    <t t-name="card">
+                        <div class="oe_kanban_global_click o_kanban_record">
+                            <div class="o_kanban_primary_left">
+                                <strong><field name="name"/></strong>
+                                <div class="text-muted">
+                                    <span t-esc="'Code:'"/> <field name="code"/>
+                                </div>
+                                <div>
+                                    <span t-esc="'Type:'"/> <field name="type_litige_id"/>
+                                </div>
+                                <div>
+                                    <span t-esc="'Position:'"/> <field name="position_banque"/>
+                                </div>
+                            </div>
+                            <div class="o_kanban_primary_right">
+                                <div><field name="responsable_id" widget="many2one_avatar_user"/></div>
+                                <div class="text-muted"><field name="date_reception"/></div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+
+    <!-- ===== CALENDAR ===== -->
+    <record id="view_calendar_legal_dispute" model="ir.ui.view">
+        <field name="name">collection_disputes_base.legal_dispute.calendar</field>
+        <field name="model">collection_disputes_base.legal_dispute</field>
+        <field name="arch" type="xml">
+            <!-- On utilise la date de réception comme point d'entrée calendrier -->
+            <calendar string="Litiges" date_start="date_reception" color="responsable_id">
+                <field name="name"/>
+                <field name="responsable_id"/>
+                <field name="type_litige_id"/>
+                <field name="position_banque"/>
+            </calendar>
+        </field>
+    </record>
+
+    <!-- ===== PIVOT ===== -->
+    <record id="view_pivot_legal_dispute" model="ir.ui.view">
+        <field name="name">collection_disputes_base.legal_dispute.pivot</field>
+        <field name="model">collection_disputes_base.legal_dispute</field>
+        <field name="arch" type="xml">
+            <pivot string="Analyse des litiges">
+                <!-- Mesures -->
+                <field name="total_honorary" type="measure"/>
+                <field name="total_procedure_fee" type="measure"/>
+                <field name="total_additional_fees" type="measure"/>
+
+                <!-- Dimensions -->
+                <field name="responsable_id"/>
+                <field name="type_litige_id"/>
+                <field name="position_banque"/>
+                <field name="pays_id"/>
+                <field name="date_reception" interval="month"/>
+            </pivot>
+        </field>
+    </record>
+
+    <!-- ===== GRAPH ===== -->
+    <record id="view_graph_legal_dispute" model="ir.ui.view">
+        <field name="name">collection_disputes_base.legal_dispute.graph</field>
+        <field name="model">collection_disputes_base.legal_dispute</field>
+        <field name="arch" type="xml">
+            <graph string="Graphique des litiges" type="bar" stacked="True">
+                <!-- Mesure par défaut -->
+                <field name="total_honorary" type="measure"/>
+                <!-- Groupements -->
+                <field name="date_reception" interval="month"/>
+                <field name="type_litige_id" group="True"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- ===== ACTIVITY ===== -->
+    <record id="view_activity_legal_dispute" model="ir.ui.view">
+        <field name="name">collection_disputes_base.legal_dispute.activity</field>
+        <field name="model">collection_disputes_base.legal_dispute</field>
+        <field name="arch" type="xml">
+            <activity string="Activités"/>
+        </field>
+    </record>
+
+    <record id="action_legal_dispute" model="ir.actions.act_window">
+        <field name="name">Litiges</field>
+        <field name="res_model">collection_disputes_base.legal_dispute</field>
+        <field name="view_mode">list,kanban,calendar,pivot,graph,activity,form</field>
+    </record>
+
+    <menuitem id="menu_legal_dispute" name="Litiges" parent="menu_collection_disputes_base_root" sequence="1" action="action_legal_dispute"/>
+</odoo>

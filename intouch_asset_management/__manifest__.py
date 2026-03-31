@@ -1,0 +1,20 @@
+{
+    'name': 'INTOUCH Asset Management',
+    'version': '1.0',
+    'category': 'Accounting/Assets',
+    'summary': 'Asset configuration management for INTOUCH',
+    'author': 'Baamtu',
+    'depends': ['base', 'account', 'account_asset', 'hr', 'customisable_workflow'],
+    'data': [
+        'security/ir.model.access.csv',
+        'data/sequence.xml',
+        'views/site_views.xml',
+        'views/floor_views.xml',
+        'views/res_company.xml',
+        'views/account_asset_views.xml',
+        'views/asset_inventory_views.xml',
+        'views/asset_menu.xml',
+    ],
+    'installable': True,
+    'application': True,
+}

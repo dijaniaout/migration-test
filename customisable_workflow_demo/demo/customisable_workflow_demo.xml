@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Workflow -->
+        <record id="demo_workflow" model="customisable_workflow.workflow">
+            <field name="name">Processus demo</field>
+        </record>
+
+        <!-- Documents -->
+        <record id="demo_workflow_doc1" model="customisable_workflow.document">
+            <field name="name">Document 1</field>
+        </record>
+        <record id="demo_workflow_doc2" model="customisable_workflow.document">
+            <field name="name">Document 2</field>
+        </record>
+        <record id="demo_workflow_doc3" model="customisable_workflow.document">
+            <field name="name">Document 3</field>
+        </record>
+
+        <!-- Steps -->
+        <record id="demo_workflow_step1" model="customisable_workflow.step">
+            <field name="name">Etape 1</field>
+            <field name="workflow_id" ref="customisable_workflow_demo.demo_workflow"/>
+            <field name="provided_document_ids" eval="[(4, ref('customisable_workflow_demo.demo_workflow_doc1'))]"/>
+        </record>
+
+        <record id="demo_workflow_step2" model="customisable_workflow.step">
+            <field name="name">Etape 2</field>
+            <field name="workflow_id" ref="customisable_workflow_demo.demo_workflow"/>
+            <field name="provided_document_ids" eval="[(4, ref('customisable_workflow_demo.demo_workflow_doc2'))]"/>
+        </record>
+        <record id="demo_workflow_validation_doc1_step2" model="customisable_workflow_validation.step.validation">
+            <field name="step_id" ref="customisable_workflow_demo.demo_workflow_step2"/>
+            <field name="document_id" ref="customisable_workflow_demo.demo_workflow_doc1"/>
+        </record>
+
+        <record id="demo_workflow_step3" model="customisable_workflow.step">
+            <field name="name">Etape 3</field>
+            <field name="workflow_id" ref="customisable_workflow_demo.demo_workflow"/>
+            <field name="provided_document_ids" eval="[(4, ref('customisable_workflow_demo.demo_workflow_doc3'))]"/>
+        </record>
+        <record id="demo_workflow_validation_doc2_step3" model="customisable_workflow_validation.step.validation">
+            <field name="step_id" ref="customisable_workflow_demo.demo_workflow_step3"/>
+            <field name="document_id" ref="customisable_workflow_demo.demo_workflow_doc2"/>
+        </record>
+        <record id="demo_workflow_signature_doc2_step3" model="customisable_workflow_signature.step.signature">
+            <field name="step_id" ref="customisable_workflow_demo.demo_workflow_step3"/>
+            <field name="document_id" ref="customisable_workflow_demo.demo_workflow_doc1"/>
+        </record>
+
+        <!-- set initial step -->
+        <record id="customisable_workflow_demo.demo_workflow" model="customisable_workflow.workflow">
+            <field name="start_step_id" ref="customisable_workflow_demo.demo_workflow_step1"/>
+        </record>
+
+        <!-- Decisions -->
+        <record id="demo_workflow_decision_step1_step2" model="customisable_workflow.step_decision">
+            <field name="name">Valider</field>
+            <field name="workflow_id" ref="customisable_workflow_demo.demo_workflow"/>
+            <field name="step_id" ref="customisable_workflow_demo.demo_workflow_step1"/>
+            <field name="target_step_id" ref="customisable_workflow_demo.demo_workflow_step2"/>
+        </record>
+        <record id="demo_workflow_decision_step2_step3" model="customisable_workflow.step_decision">
+            <field name="name">Valider</field>
+            <field name="workflow_id" ref="customisable_workflow_demo.demo_workflow"/>
+            <field name="step_id" ref="customisable_workflow_demo.demo_workflow_step2"/>
+            <field name="target_step_id" ref="customisable_workflow_demo.demo_workflow_step3"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_step_form_inherit" model="ir.ui.view">
+        <field name="name">step.form.inherit</field>
+        <field name="model">customisable_workflow.step</field>
+        <field name="inherit_id" ref="customisable_workflow.customisable_workflow_step_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[1]/field[@name='provided_document_ids']" position="after">
+                <field name="document_to_validate_ids">
+                    <list editable="bottom">
+                        <field name="document_id"/>
+                        <field name="allowed_group_ids" widget="many2many_tags"/>
+                    </list>
+                </field>
+            </xpath>
+        </field>
+    </record>
+</odoo>

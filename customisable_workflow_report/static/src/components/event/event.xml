@@ -1,0 +1,162 @@
+<templates id="template" xml:space="preserve">
+    <t t-name="customisable_workflow_report.EventWidget">
+        <t t-set="event" t-value="eventState.data"/>
+        <div class="o_customisable_workflow_report_event" t-att-class="{'o_customisable_workflow_report_history-event': !props.lastEvent}">
+            <div class="event-header">
+                <div class="header-title">
+                    <div class="event-type">
+                        <div t-if="event.type=='creation'"><i class="fa fa-sign-in fa-lg"/> Création</div>
+                        <div t-if="event.type=='signature'"><i class="fa fa-stamp fa-lg"/> Signature</div>
+                        <div t-if="event.type=='validation'"><i class="fa fa-eye fa-lg"/> Validation</div>
+                    </div>
+                </div>
+                <div class="header-status">
+                    <div class="event-status">
+                        <t t-if="event.type=='creation'">
+                            <t t-if="event.date!=false">
+                                <div  class="badge rounded-pill text-bg-success">
+                                    <t t-if="event.document_model=='customisable_workflow.work_given_document'">Fournis</t>
+                                    <t t-if="event.document_model=='customisable_workflow.work_generated_document'">Généré</t>
+                                </div>
+                            </t>
+                            <t t-else="">
+                                <t t-if="event.document_model=='customisable_workflow.work_given_document'">
+                                    <div class="badge rounded-pill text-bg-warning">A fournir</div>
+                                </t>
+                            </t>
+                        </t>
+                        <t t-if="event.type=='signature'">
+                            <t t-if="event.state=='signed'">
+                                <div class="badge rounded-pill text-bg-success">Signé</div>
+                            </t>
+                            <t t-elif="event.state=='rejected'">
+                                <div class="badge rounded-pill text-bg-danger">Rejeté</div>
+                            </t>
+                            <t t-else="">
+                                <t t-if="event.current_user_can_act">
+                                    <div class="badge rounded-pill text-bg-warning">A signer</div>
+                                </t>
+                                <t t-else="">
+                                    <div class="badge rounded-pill">En signature</div>
+                                </t>
+                            </t>
+                        </t>
+                        <t t-if="event.type=='validation'">
+                            <t t-if="event.state=='validated'">
+                                <div class="badge rounded-pill text-bg-success">Validé</div>
+                            </t>
+                            <t t-elif="event.state=='rejected'">
+                                <div class="badge rounded-pill text-bg-danger">Rejeté</div>
+                            </t>
+                            <t t-else="">
+                                <t t-if="event.current_user_can_act">
+                                    <div class="badge rounded-pill text-bg-warning">A valider</div>
+                                </t>
+                                <t t-else="">
+                                    <div class="badge rounded-pill">En validation</div>
+                                </t>
+                            </t>
+                        </t>
+                    </div>
+                    <div class="header-action">
+                        <button name="action_post" t-if="event.type=='signature' and event.current_user_can_act and props.work.current_step_id.id == event.step_id[0]" title="Signez ou rejetez le document" t-on-click="signOrValidate" class="btn btn-primary">Traiter</button>
+                        <button name="action_post" t-if="event.type=='validation' and event.current_user_can_act and props.work.current_step_id.id == event.step_id[0]" title="Validez ou rejetez le document" t-on-click="signOrValidate" class="btn btn-primary">Traiter</button>
+                        <div>
+                            <button t-on-click="onUpload" class="upload btn-primary" icon="fa-edit" title="Chargez les documents demandés" 
+                                t-if="event.type=='creation' and event.date==false and event.current_user_can_act==true">
+                                Fournir
+                            </button>
+                            <input type="file" t-att-id="event.id" t-ref="uploadFileInput" class="o_input_file o_hidden" t-on-change.stop="onInputChange"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="event-details">
+                <div class="point">
+                    <div class="o_form_label">
+                        <t t-if="event.type=='signature'">Document à signer</t>
+                        <t t-if="event.type=='validation'">Document à valider</t>
+                    </div>
+                    <div t-if="event.create_date!=false">
+                        <div class="doc">
+                            <div class="o_image o_image_64_cover o_image_thumbnail" t-att-data-mimetype="event.source_mimetype" 
+                            t-att-class="actionHover.isSourceHovered ? 'blur_image' : ''" t-on-mouseenter="onSourceActionsEnter" t-on-mouseleave="onSourceActionsLeave"></div>
+                            <div class="document_actions hide">
+                                <div class="download" t-on-click="downloadSource"  t-on-mouseenter="onSourceActionsEnter" t-on-mouseleave="onSourceActionsLeave">
+                                    <i class="fa fa-download fa-lg" title="Téléchargez"/>
+                                </div>
+                                <div class="preview" t-on-click="previewSource" t-if="event.source_previewable != false"  t-on-mouseenter="onSourceActionsEnter" t-on-mouseleave="onSourceActionsLeave">
+                                    <i class="fa fa-eye fa-lg" title="Visualisez"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="doc_details">
+                            <div class="doc_field">
+                                <div>
+                                    <label class="o_form_label">Fourni le</label>
+                                </div>
+                                <div t-out="event.create_date_day"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="point point_right">
+                    <div class="o_form_label">Document
+                        <t t-if="event.type=='signature'">
+                            <t t-if="event.state=='rejected' "> rejeté</t>
+                            <t t-else=""> signé</t>
+                        </t>
+                        <t t-if="event.type=='validation'">
+                            <t t-if="event.state=='rejected' "> rejeté</t>
+                            <t t-else=""> validé</t>
+                        </t>
+                        <t t-if="event.type=='creation'">
+                            <t t-if="event.document_model=='customisable_workflow.work_given_document'"> fourni</t>
+                            <t t-else=""> généré</t>
+                        </t>
+                    </div>
+                    <div t-if="event.date!=false">
+                        <div class="doc">
+                            <div class="o_image o_image_64_cover o_image_thumbnail" t-att-data-mimetype="event.result_mimetype" t-att-class="actionHover.isResultHovered ? 'blur_image' : ''" t-on-mouseenter="onResultActionsEnter" t-on-mouseleave="onResultActionsLeave"></div>
+                            <div class="document_actions hide">
+                                <div class="update" t-if="event.type=='creation' and event.document_model=='customisable_workflow.work_given_document'
+                        and props.work.current_step_id.id == event.step_id[0]" t-on-mouseenter="onResultActionsEnter" t-on-mouseleave="onResultActionsLeave">
+                                    <i class="fa fa-pencil fa-lg" title="Modifiez" t-on-click="onUpload"/>
+                                </div>
+                                <div class="download" t-on-click="downloadResult" t-ref="download" t-on-mouseenter="onResultActionsEnter" t-on-mouseleave="onResultActionsLeave">
+                                    <i class="fa fa-download fa-lg" title="Téléchargez"/>
+                                </div>
+                                <div class="preview" t-on-click="previewResult" t-if="event.result_previewable != false" t-on-mouseenter="onResultActionsEnter" t-on-mouseleave="onResultActionsLeave">
+                                    <i class="fa fa-eye fa-lg" title="Visualisez"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="doc_details">
+                            <div class="doc_field">
+                                <div>
+                                    <label class="o_form_label">Le</label>
+                                </div>
+                                <div t-out="event.date_day"></div>
+                            </div>
+                            <div class="doc_field">
+                                <div>
+                                    <label class="o_form_label">Par</label>
+                                </div>
+                                <Avatar resModel="'res.users'" resId="event.user_id[0]" displayName="''" noSpacing="true"/></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="history_action" t-if="props.lastEvent">
+                <button class="btn btn-outline-secondary history-button" t-on-click="props.onHistoryToggle" t-att-class="props.nbHistoryEvents == 0 ? 'disabled': ''">
+                    <i class="o_button_icon fa fa-fw fa-expand" t-if="!props.historyOpen"></i>
+                    <i class="o_button_icon fa fa-fw fa-compress" t-if="props.historyOpen"></i>
+                    <div class="statinfo">
+                        <span class="o_stat_text">Historique des actions</span>
+                        <span class="o_stat_value" t-out="props.nbHistoryEvents"/>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </t>
+</templates>

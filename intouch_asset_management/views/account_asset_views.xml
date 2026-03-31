@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_account_asset_form_inherit_information"
+            model="ir.ui.view">
+        <field name="name">account.asset.form.inherit.information</field>
+        <field name="model">account.asset</field>
+        <field name="inherit_id" ref="account_asset.view_account_asset_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/header" position="inside">
+                <button name="action_generate_imo_code"
+                        type="object"
+                        string="Générer Code IMO"
+                        class="oe_highlight"
+                        invisible="imo_code or not site_id or not floor_id or not model_id"/>
+            </xpath>
+
+            <!-- Ajouter le champ code après le name -->
+            <xpath expr="//group[field[@name='method']]/field[@name='method']" position="before">
+                <field name="code" readonly="0"/>
+            </xpath>
+
+            <xpath expr="//notebook/page[1]" position="before">
+                <page string="Informations">
+                    <group>
+                        <group col="2">
+                            <field name="country_code" readonly="1" class="oe_inline"/>
+                            <field name="entity_code" readonly="1" class="oe_inline"/>
+                            <field name="imo_code" readonly="1" class="oe_inline oe_highlight"/>
+                            <field name="qr_code" widget="image" options="{'size': [150,150]}"/>
+                        </group>
+                        <group col="2">
+                            <field name="site_id" options="{'no_create': False}"/>
+                            <field name="floor_id" domain="[('site_id', '=', site_id)]"/>
+                            <field name="asset_assign_to" widget="radio"/>
+                            <field name="employee_id" string="Employé" invisible="asset_assign_to == 'department' or not asset_assign_to" widget="many2one_avatar_employee"/>
+                            <field name="department_id" string="Département" invisible="asset_assign_to == 'employee' or not asset_assign_to"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

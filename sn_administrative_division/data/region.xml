@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="region_dakar" model="sn_administrative_division.region">
+            <field name="name">DAKAR</field>
+        </record>
+        <record id="region_ziguinchor" model="sn_administrative_division.region">
+            <field name="name">ZIGUINCHOR</field>
+        </record>
+        <record id="region_diourbel" model="sn_administrative_division.region">
+            <field name="name">DIOURBEL</field>
+        </record>
+        <record id="region_st_louis" model="sn_administrative_division.region">
+            <field name="name">SAINT-LOUIS</field>
+        </record>
+        <record id="region_tambacounda" model="sn_administrative_division.region">
+            <field name="name">TAMBACOUNDA</field>
+        </record>
+        <record id="region_kaolack" model="sn_administrative_division.region">
+            <field name="name">KAOLACK</field>
+        </record>
+        <record id="region_thies" model="sn_administrative_division.region">
+            <field name="name">THIES</field>
+        </record>
+        <record id="region_louga" model="sn_administrative_division.region">
+            <field name="name">LOUGA</field>
+        </record>
+        <record id="region_fatick" model="sn_administrative_division.region">
+            <field name="name">FATICK</field>
+        </record>
+        <record id="region_kolda" model="sn_administrative_division.region">
+            <field name="name">KOLDA</field>
+        </record>
+        <record id="region_matam" model="sn_administrative_division.region">
+            <field name="name">MATAM</field>
+        </record>
+        <record id="region_kaffrine" model="sn_administrative_division.region">
+            <field name="name">KAFFRINE</field>
+        </record>
+        <record id="region_kedougou" model="sn_administrative_division.region">
+            <field name="name">KEDOUGOU</field>
+        </record>
+        <record id="region_sedhiou" model="sn_administrative_division.region">
+            <field name="name">SEDHIOU</field>
+        </record>
+    </data>
+</odoo>

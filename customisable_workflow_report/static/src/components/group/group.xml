@@ -1,0 +1,20 @@
+<templates id="template" xml:space="preserve">
+   <t t-name="customisable_workflow_report.GroupWidget">
+        <div class="o_customisable_workflow_report-event-documents o_customisable_workflow_report-event-group">
+            <div class="events">
+                <div class="last-event" t-att-class="history.showIndicator ? 'history_indication' : ''">
+                    <Event event="lastEvent.event" work="props.work" group="props.group" onHistoryToggle.bind="toggleHistory"
+                    reloadGroug.bind="reload"
+                        lastEvent="true" nbHistoryEvents="oldEvents.length" historyOpen="history.isOpen"/>
+                </div>
+                <div class="events-history">
+                    <div t-ref="history" class="history" t-att-class="history.isOpen ? '' : 'slide-hidden'">
+                        <t t-foreach="oldEvents" t-as="event" t-key="event.id">
+                            <Event event="event" work="props.work" group="props.group" reloadGroug.bind="reload"/>
+                        </t>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

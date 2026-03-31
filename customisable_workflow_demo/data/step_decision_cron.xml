@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="ir_cron_automatic_transitions_between_steps" model="ir.cron">
+        <field name="name">Gestion des transitions automatiques entre les étapes</field>
+        <field name="model_id" ref="customisable_workflow_demo.model_customisable_workflow_demo_work_demo"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_automatic_transitions_between_steps()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="nextcall" eval="(DateTime.now() + timedelta(days=0)).strftime('%Y-%m-%d 11:35:20')"/>
+        <field name="user_id" ref="base.user_admin"/>
+    </record>
+
+    <record id="ir__cron_transition_time" model="ir.cron">
+        <field name="name">Gestion du temps de traitement maximum</field>
+        <field name="model_id" ref="customisable_workflow_demo.model_customisable_workflow_demo_work_demo"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_transition_time()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="nextcall" eval="(DateTime.now() + timedelta(days=0)).strftime('%Y-%m-%d 10:05:20')"/>
+        <field name="user_id" ref="base.user_admin"/>
+    </record>
+</odoo>

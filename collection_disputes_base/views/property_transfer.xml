@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+
+        <!-- Form View -->
+        <record id="view_collection_disputes_base_property_transfer_form" model="ir.ui.view">
+            <field name="name">collection_disputes_base.property_transfer.form</field>
+            <field name="model">collection_disputes_base.property_transfer</field>
+            <field name="arch" type="xml">
+                <form string="Transfert de propriété">
+                    <header>
+                        <field name="state" widget="statusbar" options="{'clickable': '1'}"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" placeholder="Libelé ..."  widget="text"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="stakeholder_id" />
+                                <field name="creation_date" />
+                                <field name="date_start" />
+                            </group>
+                            <group>
+                                <field name="expected_end_date" />
+                                <field name="real_date_end" required='state in "done"'/>
+                                <field name="number_of_days" />
+                                <field name="number_of_days_late" />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Notes">
+                                <field name="note"/>
+                            </page>
+                            <page string="Documents">
+                                <group name="supporting_document_ids">
+                                    <field name="supporting_document_ids" widget="many2many_binary" string="Documents"/>
+                                </group>                                
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <chatter/>
+                </form>
+            </field>
+        </record>
+
+        <!-- List View -->
+        <record id="view_collection_disputes_base_property_transfer_tree" model="ir.ui.view">
+            <field name="name">collection_disputes_base.property_transfer.list</field>
+            <field name="model">collection_disputes_base.property_transfer</field>
+            <field name="arch" type="xml">
+                <list string='Transfert de propriété'>
+                    <field name="name"/>
+                    <field name="stakeholder_id"/>
+                    <field name="creation_date"/>
+                    <field name="date_start"/>
+                    <field name="expected_end_date"/>
+                    <field name="real_date_end"/>
+                    <field name="state"/>
+                    <field name="number_of_days"/>
+                    <field name="number_of_days_late"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_property_transfer_kanban_grouped" model="ir.ui.view">
+            <field name="name">property.transfer.kanban.grouped</field>
+            <field name="model">collection_disputes_base.property_transfer</field>
+            <field name="arch" type="xml">
+                <kanban default_group_by="stakeholder_id" class="o_kanban_grouped">
+                    <templates>
+                        <t t-name="card">
+                            <div class="oe_kanban_global_click o_kanban_record">
+                                <div class="o_kanban_details">
+                                    <h4><field name="name"/></h4>
+                                    <div><strong>Date de début :</strong> <field name="date_start"/></div>
+                                    <div><strong>Date de fin prévue :</strong> <field name="expected_end_date"/></div>
+                                    <div><strong>Statut :</strong> <field name="state"/></div>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+        <record id="view_property_transfer_calendar" model="ir.ui.view">
+            <field name="name">property.transfer.calendar</field>
+            <field name="model">collection_disputes_base.property_transfer</field>
+            <field name="arch" type="xml">
+                <calendar string="Calendrier des transfert de propriété " date_start="date_start" date_stop="expected_end_date" color="stakeholder_id">
+                    <field name="name"/>
+                </calendar>
+            </field>
+        </record>
+
+
+        <!-- Action to open the list view -->
+        <record id="action_collection_disputes_base_property_transfer" model="ir.actions.act_window">
+            <field name="name"> Transfert de propriété </field>
+            <field name="res_model">collection_disputes_base.property_transfer</field>
+            <field name="view_mode">kanban,list,calendar,pivot,activity,form</field>
+            <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Créer un nouveau Transfert !
+            </p>
+        </field>
+        </record>
+
+        <menuitem 
+            name="Transfert de propriété " 
+            id="collection_dispute_management_property_transfer_menu" 
+            parent="menu_stakeholders" 
+            action="action_collection_disputes_base_property_transfer"/>
+            
+    </data>
+
+</odoo>

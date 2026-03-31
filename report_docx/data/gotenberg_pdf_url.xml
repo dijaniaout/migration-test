@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="gotenberg_pdf_url" model="ir.config_parameter">
+            <field name="key">ijayo.gotenberg_pdf_url</field>
+            <field name="value">https://gotenberg.dev.ijayo.gotugende.com/forms/libreoffice/convert</field>
+        </record>
+    </data>
+</odoo>

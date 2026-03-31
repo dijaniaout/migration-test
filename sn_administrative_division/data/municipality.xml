@@ -1,0 +1,2257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="commune_gor" model="sn_administrative_division.municipality">
+            <field name="name">GOR</field>
+            <field name="department_id" ref="sn_administrative_division.department_dakar"/>
+        </record>
+        <record id="commune_biscuiterie" model="sn_administrative_division.municipality">
+            <field name="name">BISCUITERIE</field>
+            <field name="department_id" ref="sn_administrative_division.department_dakar"/>
+        </record>
+        <record id="commune_ca_merm" model="sn_administrative_division.municipality">
+            <field name="name">CA.MERMOZ/SACRE-COEUR</field>
+            <field name="department_id" ref="sn_administrative_division.department_dakar"/>
+        </record>
+        <record id="commune_camberene" model="sn_administrative_division.municipality">
+            <field name="name">CAMBERENE</field>
+            <field name="department_id" ref="sn_administrative_division.department_dakar"/>
+        </record>
+        <record id="commune_colb_fass_GUEU" model="sn_administrative_division.municipality">
+            <field name="name">COLOBANE/FASS/GUEULE TAPEE</field>
+            <field name="department_id" ref="sn_administrative_division.department_dakar"/>
+        </record>
+        <record id="commune_dieup" model="sn_administrative_division.municipality">
+            <field name="name">DIEUPPEUL DERKLE</field>
+            <field name="department_id" ref="sn_administrative_division.department_dakar"/>
+        </record>
+        <record id="commune_fann" model="sn_administrative_division.municipality">
+            <field name="name">FANN/POINT E/ AMITIE</field>
+            <field name="department_id" ref="sn_administrative_division.department_dakar"/>
+        </record>
+        <record id="commune_goree" model="sn_administrative_division.municipality">
+            <field name="name">GOREE</field>
+            <field name="department_id" ref="sn_administrative_division.department_dakar"/>
+        </record>
+        <record id="commune_gr_dakar" model="sn_administrative_division.municipality">
+            <field name="name">GRAND DAKAR</field>
+            <field name="department_id" ref="sn_administrative_division.department_dakar"/>
+        </record>
+        <record id="commune_gr_yoff" model="sn_administrative_division.municipality">
+            <field name="name">GRAND YOFF</field>
+            <field name="department_id" ref="sn_administrative_division.department_dakar"/>
+        </record>
+        <record id="commune_hann" model="sn_administrative_division.municipality">
+            <field name="name">HANN/BEL AIR</field>
+            <field name="department_id" ref="sn_administrative_division.department_dakar"/>
+        </record>
+        <record id="commune_hlm" model="sn_administrative_division.municipality">
+            <field name="name">HLM</field>
+            <field name="department_id" ref="sn_administrative_division.department_dakar"/>
+        </record>
+        <record id="commune_medina" model="sn_administrative_division.municipality">
+            <field name="name">MEDINA</field>
+            <field name="department_id" ref="sn_administrative_division.department_dakar"/>
+        </record>
+        <record id="commune_ouakam" model="sn_administrative_division.municipality">
+            <field name="name">OUAKAM</field>
+            <field name="department_id" ref="sn_administrative_division.department_dakar"/>
+        </record>
+        <record id="commune_parcelles" model="sn_administrative_division.municipality">
+            <field name="name">PARCELLES ASSAINIES</field>
+            <field name="department_id" ref="sn_administrative_division.department_dakar"/>
+        </record>
+        <record id="commune_patte" model="sn_administrative_division.municipality">
+            <field name="name">PATTE D’OIE</field>
+            <field name="department_id" ref="sn_administrative_division.department_dakar"/>
+        </record>
+        <record id="commune_plateau" model="sn_administrative_division.municipality">
+            <field name="name">PLATEAU</field>
+            <field name="department_id" ref="sn_administrative_division.department_dakar"/>
+        </record>
+        <record id="commune_sicap" model="sn_administrative_division.municipality">
+            <field name="name">SICAP LIBERTE</field>
+            <field name="department_id" ref="sn_administrative_division.department_dakar"/>
+        </record>
+        <record id="commune_yoff" model="sn_administrative_division.municipality">
+            <field name="name">YOFF</field>
+            <field name="department_id" ref="sn_administrative_division.department_dakar"/>
+        </record>
+
+        <record id="commune_diareme" model="sn_administrative_division.municipality">
+            <field name="name">DIAREME LIMAMOULAYE</field>
+            <field name="department_id" ref="sn_administrative_division.department_guediewaye"/>
+        </record>
+        <record id="commune_golf_su" model="sn_administrative_division.municipality">
+            <field name="name">GOLF SUD</field>
+            <field name="department_id" ref="sn_administrative_division.department_guediewaye"/>
+        </record>
+        <record id="commune_medina_gou" model="sn_administrative_division.municipality">
+            <field name="name">MEDINA GOUNASS</field>
+            <field name="department_id" ref="sn_administrative_division.department_guediewaye"/>
+        </record>
+        <record id="commune_sam_not" model="sn_administrative_division.municipality">
+            <field name="name">SAM NOTAIRE</field>
+            <field name="department_id" ref="sn_administrative_division.department_guediewaye"/>
+        </record>
+        <record id="commune_wak_nimz" model="sn_administrative_division.municipality">
+            <field name="name">WAKHINANE NIMZATT</field>
+            <field name="department_id" ref="sn_administrative_division.department_guediewaye"/>
+        </record>
+
+        <record id="commune_daliford" model="sn_administrative_division.municipality">
+            <field name="name">DALIFORD</field>
+            <field name="department_id" ref="sn_administrative_division.department_pikine"/>
+        </record>
+        <record id="commune_diack_sao" model="sn_administrative_division.municipality">
+            <field name="name">DIACK SAO</field>
+            <field name="department_id" ref="sn_administrative_division.department_pikine"/>
+        </record>
+        <record id="commune_dima_scap" model="sn_administrative_division.municipality">
+            <field name="name">DIAMAGUENE/SICAP M’BAO</field>
+            <field name="department_id" ref="sn_administrative_division.department_pikine"/>
+        </record>
+        <record id="commune_djidah_thiaroy" model="sn_administrative_division.municipality">
+            <field name="name">DJIDAH THIAROYE KAO</field>
+            <field name="department_id" ref="sn_administrative_division.department_pikine"/>
+        </record>
+        <record id="commune_guin_rail_nord" model="sn_administrative_division.municipality">
+            <field name="name">GUINAW RAIL NORD</field>
+            <field name="department_id" ref="sn_administrative_division.department_pikine"/>
+        </record>
+        <record id="commune_guin_rail_sud" model="sn_administrative_division.municipality">
+            <field name="name">GUINAW RAIL SUD</field>
+            <field name="department_id" ref="sn_administrative_division.department_pikine"/>
+        </record>
+        <record id="commune_keur_massar" model="sn_administrative_division.municipality">
+            <field name="name">KEUR MASSAR</field>
+            <field name="department_id" ref="sn_administrative_division.department_pikine"/>
+        </record>
+        <record id="commune_mbao" model="sn_administrative_division.municipality">
+            <field name="name">M’BAO</field>
+            <field name="department_id" ref="sn_administrative_division.department_pikine"/>
+        </record>
+        <record id="commune_malika" model="sn_administrative_division.municipality">
+            <field name="name">MALIKA</field>
+            <field name="department_id" ref="sn_administrative_division.department_pikine"/>
+        </record>
+        <record id="commune_pik_est" model="sn_administrative_division.municipality">
+            <field name="name">PIKINE EST</field>
+            <field name="department_id" ref="sn_administrative_division.department_pikine"/>
+        </record>
+        <record id="commune_pik_ouest" model="sn_administrative_division.municipality">
+            <field name="name">PIKINE OUEST</field>
+            <field name="department_id" ref="sn_administrative_division.department_pikine"/>
+        </record>
+        <record id="commune_pik_sud" model="sn_administrative_division.municipality">
+            <field name="name">PIKINE SUD</field>
+            <field name="department_id" ref="sn_administrative_division.department_pikine"/>
+        </record>
+        <record id="commune_thiaroy_mer" model="sn_administrative_division.municipality">
+            <field name="name">THIAROYE /MER</field>
+            <field name="department_id" ref="sn_administrative_division.department_pikine"/>
+        </record>
+        <record id="commune_thiaroy" model="sn_administrative_division.municipality">
+            <field name="name">THIAROYE GARE</field>
+            <field name="department_id" ref="sn_administrative_division.department_pikine"/>
+        </record>
+        <record id="commune_yeum_nord" model="sn_administrative_division.municipality">
+            <field name="name">YEUMBEUL NORD</field>
+            <field name="department_id" ref="sn_administrative_division.department_pikine"/>
+        </record>
+        <record id="commune_yeum_sud" model="sn_administrative_division.municipality">
+            <field name="name">YEUMBEUL SUD</field>
+            <field name="department_id" ref="sn_administrative_division.department_pikine"/>
+        </record>
+
+        <record id="commune_bambylor" model="sn_administrative_division.municipality">
+            <field name="name">BAMBYLOR</field>
+            <field name="department_id" ref="sn_administrative_division.department_rufisque"/>
+        </record>
+        <record id="commune_com_bargny" model="sn_administrative_division.municipality">
+            <field name="name">COM. BARGNY</field>
+            <field name="department_id" ref="sn_administrative_division.department_rufisque"/>
+        </record>
+        <record id="commune_com_diamniadio" model="sn_administrative_division.municipality">
+            <field name="name">COM. DIAMNIADIO</field>
+            <field name="department_id" ref="sn_administrative_division.department_rufisque"/>
+        </record>
+        <record id="commune_com_jax_parcelle" model="sn_administrative_division.municipality">
+            <field name="name">COM. JAXAAY PARCELLE NIAKOUL RAP</field>
+            <field name="department_id" ref="sn_administrative_division.department_rufisque"/>
+        </record>
+        <record id="commune_com_sangal" model="sn_administrative_division.municipality">
+            <field name="name">COM. SANGALKAM</field>
+            <field name="department_id" ref="sn_administrative_division.department_rufisque"/>
+        </record>
+        <record id="commune_com_sebiko" model="sn_administrative_division.municipality">
+            <field name="name">COM. SEBIKOTANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_rufisque"/>
+        </record>
+        <record id="commune_com_sendou" model="sn_administrative_division.municipality">
+            <field name="name">COM. SENDOU</field>
+            <field name="department_id" ref="sn_administrative_division.department_rufisque"/>
+        </record>
+        <record id="commune_ruf_est" model="sn_administrative_division.municipality">
+            <field name="name">RUFISQUE EST</field>
+            <field name="department_id" ref="sn_administrative_division.department_rufisque"/>
+        </record>
+        <record id="commune_ruf_cent_nrd" model="sn_administrative_division.municipality">
+            <field name="name">RUFISQUE CENTRE (NORD)</field>
+            <field name="department_id" ref="sn_administrative_division.department_rufisque"/>
+        </record>
+        <record id="commune_ruf_ouest" model="sn_administrative_division.municipality">
+            <field name="name">RUFISQUE OUEST</field>
+            <field name="department_id" ref="sn_administrative_division.department_rufisque"/>
+        </record>
+        <record id="commune_tiva_peulh_niagha" model="sn_administrative_division.municipality">
+            <field name="name">TIVAOUANE PEULH-NIAGHA</field>
+            <field name="department_id" ref="sn_administrative_division.department_rufisque"/>
+        </record>
+        <record id="commune_yene" model="sn_administrative_division.municipality">
+            <field name="name">YENE</field>
+            <field name="department_id" ref="sn_administrative_division.department_rufisque"/>
+        </record>
+
+        <record id="commune_balingore" model="sn_administrative_division.municipality">
+            <field name="name">BALINGORE</field>
+            <field name="department_id" ref="sn_administrative_division.department_bignona"/>
+        </record>
+        <record id="commune_com_bignona" model="sn_administrative_division.municipality">
+            <field name="name">COM. BIGNONA</field>
+            <field name="department_id" ref="sn_administrative_division.department_bignona"/>
+        </record>
+        <record id="commune_com_diouloulou" model="sn_administrative_division.municipality">
+            <field name="name">COM. DIOULOULOU</field>
+            <field name="department_id" ref="sn_administrative_division.department_bignona"/>
+        </record>
+        <record id="commune_com_thionck_essyl" model="sn_administrative_division.municipality">
+            <field name="name">COM. THIONCK-ESSYL</field>
+            <field name="department_id" ref="sn_administrative_division.department_bignona"/>
+        </record>
+        <record id="commune_coubalan" model="sn_administrative_division.municipality">
+            <field name="name">COUBALAN</field>
+            <field name="department_id" ref="sn_administrative_division.department_bignona"/>
+        </record>
+        <record id="commune_diegoune" model="sn_administrative_division.municipality">
+            <field name="name">DIEGOUNE</field>
+            <field name="department_id" ref="sn_administrative_division.department_bignona"/>
+        </record>
+        <record id="commune_djibidione" model="sn_administrative_division.municipality">
+            <field name="name">DJIBIDIONE</field>
+            <field name="department_id" ref="sn_administrative_division.department_bignona"/>
+        </record>
+        <record id="commune_djinaki" model="sn_administrative_division.municipality">
+            <field name="name">DJINAKI</field>
+            <field name="department_id" ref="sn_administrative_division.department_bignona"/>
+        </record>
+        <record id="commune_kafoutine" model="sn_administrative_division.municipality">
+            <field name="name">KAFOUNTINE</field>
+            <field name="department_id" ref="sn_administrative_division.department_bignona"/>
+        </record>
+        <record id="commune_karthiack" model="sn_administrative_division.municipality">
+            <field name="name">KARTHIACK</field>
+            <field name="department_id" ref="sn_administrative_division.department_bignona"/>
+        </record>
+        <record id="commune_kataba_1" model="sn_administrative_division.municipality">
+            <field name="name">KATABA I</field>
+            <field name="department_id" ref="sn_administrative_division.department_bignona"/>
+        </record>
+        <record id="commune_mangagoulack" model="sn_administrative_division.municipality">
+            <field name="name">MANGAGOULACK</field>
+            <field name="department_id" ref="sn_administrative_division.department_bignona"/>
+        </record>
+        <record id="commune_mlomp" model="sn_administrative_division.municipality">
+            <field name="name">MLOMP</field>
+            <field name="department_id" ref="sn_administrative_division.department_bignona"/>
+        </record>
+        <record id="commune_niamone" model="sn_administrative_division.municipality">
+            <field name="name">NIAMONE</field>
+            <field name="department_id" ref="sn_administrative_division.department_bignona"/>
+        </record>
+        <record id="commune_oulampane" model="sn_administrative_division.municipality">
+            <field name="name">OULAMPANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_bignona"/>
+        </record>
+        <record id="commune_ouonck" model="sn_administrative_division.municipality">
+            <field name="name">OUONCK</field>
+            <field name="department_id" ref="sn_administrative_division.department_bignona"/>
+        </record>
+        <record id="commune_sindian" model="sn_administrative_division.municipality">
+            <field name="name">SINDIAN</field>
+            <field name="department_id" ref="sn_administrative_division.department_bignona"/>
+        </record>
+        <record id="commune_suelle" model="sn_administrative_division.municipality">
+            <field name="name">SUELLE</field>
+            <field name="department_id" ref="sn_administrative_division.department_bignona"/>
+        </record>
+        <record id="commune_tenghory" model="sn_administrative_division.municipality">
+            <field name="name">TENGHORY</field>
+            <field name="department_id" ref="sn_administrative_division.department_bignona"/>
+        </record>
+
+        <record id="commune_com_oussouye" model="sn_administrative_division.municipality">
+            <field name="name">COM. OUSSOUYE</field>
+            <field name="department_id" ref="sn_administrative_division.department_oussouye"/>
+        </record>
+        <record id="commune_djembering" model="sn_administrative_division.municipality">
+            <field name="name">DJEMBERING</field>
+            <field name="department_id" ref="sn_administrative_division.department_oussouye"/>
+        </record>
+        <record id="commune_mlomp_2" model="sn_administrative_division.municipality">
+            <field name="name">MLOMP</field>
+            <field name="department_id" ref="sn_administrative_division.department_oussouye"/>
+        </record>
+        <record id="commune_oukout" model="sn_administrative_division.municipality">
+            <field name="name">OUKOUT</field>
+            <field name="department_id" ref="sn_administrative_division.department_oussouye"/>
+        </record>
+        <record id="commune_santhi_manja" model="sn_administrative_division.municipality">
+            <field name="name">SANTHIABA MANJACQUE</field>
+            <field name="department_id" ref="sn_administrative_division.department_oussouye"/>
+        </record>
+
+        <record id="commune_adeane" model="sn_administrative_division.municipality">
+            <field name="name">ADEANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_ziguinchor"/>
+        </record>
+        <record id="commune_boutou_cam" model="sn_administrative_division.municipality">
+            <field name="name">BOUTOUPA CAMAR</field>
+            <field name="department_id" ref="sn_administrative_division.department_ziguinchor"/>
+        </record>
+        <record id="commune_com_ziguinchor" model="sn_administrative_division.municipality">
+            <field name="name">COM. ZIGUINCHOR</field>
+            <field name="department_id" ref="sn_administrative_division.department_ziguinchor"/>
+        </record>
+        <record id="commune_enampore" model="sn_administrative_division.municipality">
+            <field name="name">ENAMPORE</field>
+            <field name="department_id" ref="sn_administrative_division.department_ziguinchor"/>
+        </record>
+        <record id="commune_niaguis" model="sn_administrative_division.municipality">
+            <field name="name">NIAGUIS</field>
+            <field name="department_id" ref="sn_administrative_division.department_ziguinchor"/>
+        </record>
+        <record id="commune_nyassia" model="sn_administrative_division.municipality">
+            <field name="name">NYASSIA</field>
+            <field name="department_id" ref="sn_administrative_division.department_ziguinchor"/>
+        </record>
+
+        <record id="commune_dondol" model="sn_administrative_division.municipality">
+            <field name="name">DONDOL</field>
+            <field name="department_id" ref="sn_administrative_division.department_bambey"/>
+        </record>
+        <record id="commune_gogom" model="sn_administrative_division.municipality">
+            <field name="name">GOGOM</field>
+            <field name="department_id" ref="sn_administrative_division.department_bambey"/>
+        </record>
+        <record id="commune_goye" model="sn_administrative_division.municipality">
+            <field name="name">GOYE</field>
+            <field name="department_id" ref="sn_administrative_division.department_bambey"/>
+        </record>
+        <record id="commune_baba_garage" model="sn_administrative_division.municipality">
+            <field name="name">BABA GARAGE</field>
+            <field name="department_id" ref="sn_administrative_division.department_bambey"/>
+        </record>
+        <record id="commune_com_bambey" model="sn_administrative_division.municipality">
+            <field name="name">COM. BAMBEY</field>
+            <field name="department_id" ref="sn_administrative_division.department_bambey"/>
+        </record>
+        <record id="commune_dangalma" model="sn_administrative_division.municipality">
+            <field name="name">DANGALMA</field>
+            <field name="department_id" ref="sn_administrative_division.department_bambey"/>
+        </record>
+        <record id="commune_dinguiraye" model="sn_administrative_division.municipality">
+            <field name="name">DINGUIRAYE</field>
+            <field name="department_id" ref="sn_administrative_division.department_bambey"/>
+        </record>
+        <record id="commune_gawane" model="sn_administrative_division.municipality">
+            <field name="name">GAWANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_bambey"/>
+        </record>
+        <record id="commune_k_samba_kane" model="sn_administrative_division.municipality">
+            <field name="name">K. SAMBA KANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_bambey"/>
+        </record>
+        <record id="commune_lambaye" model="sn_administrative_division.municipality">
+            <field name="name">LAMBAYE</field>
+            <field name="department_id" ref="sn_administrative_division.department_bambey"/>
+        </record>
+        <record id="commune_refane" model="sn_administrative_division.municipality">
+            <field name="name">REFANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_bambey"/>
+        </record>
+        <record id="commune_thiakar" model="sn_administrative_division.municipality">
+            <field name="name">THIAKAR</field>
+            <field name="department_id" ref="sn_administrative_division.department_bambey"/>
+        </record>
+
+        <record id="commune_dindy" model="sn_administrative_division.municipality">
+            <field name="name">DINDY</field>
+            <field name="department_id" ref="sn_administrative_division.department_diourbel"/>
+        </record>
+        <record id="commune_dioulo" model="sn_administrative_division.municipality">
+            <field name="name">DOULO</field>
+            <field name="department_id" ref="sn_administrative_division.department_diourbel"/>
+        </record>
+        <record id="commune_gohe" model="sn_administrative_division.municipality">
+            <field name="name">GOHE</field>
+            <field name="department_id" ref="sn_administrative_division.department_diourbel"/>
+        </record>
+        <record id="commune_com_diourbel" model="sn_administrative_division.municipality">
+            <field name="name">COM. DIOURBEL</field>
+            <field name="department_id" ref="sn_administrative_division.department_diourbel"/>
+        </record>
+        <record id="commune_dankh_sene" model="sn_administrative_division.municipality">
+            <field name="name">DANKH SENE</field>
+            <field name="department_id" ref="sn_administrative_division.department_diourbel"/>
+        </record>
+        <record id="commune_gade_escale" model="sn_administrative_division.municipality">
+            <field name="name">GADE ESCALE</field>
+            <field name="department_id" ref="sn_administrative_division.department_diourbel"/>
+        </record>
+        <record id="commune_keur_galou" model="sn_administrative_division.municipality">
+            <field name="name">KEUR GALGOU</field>
+            <field name="department_id" ref="sn_administrative_division.department_diourbel"/>
+        </record>
+        <record id="commune_patar" model="sn_administrative_division.municipality">
+            <field name="name">PATAR</field>
+            <field name="department_id" ref="sn_administrative_division.department_diourbel"/>
+        </record>
+        <record id="commune_taiba_moutoupha" model="sn_administrative_division.municipality">
+            <field name="name">TAIBA MOUTOUPHA</field>
+            <field name="department_id" ref="sn_administrative_division.department_diourbel"/>
+        </record>
+        <record id="commune_tocky_gare" model="sn_administrative_division.municipality">
+            <field name="name">TOCKY GARE</field>
+            <field name="department_id" ref="sn_administrative_division.department_diourbel"/>
+        </record>
+        <record id="commune_touba_lappe" model="sn_administrative_division.municipality">
+            <field name="name">TOUBA LAPPE</field>
+            <field name="department_id" ref="sn_administrative_division.department_diourbel"/>
+        </record>
+        <record id="commune_toure_mbonde" model="sn_administrative_division.municipality">
+            <field name="name">TOURE M’BONDE</field>
+            <field name="department_id" ref="sn_administrative_division.department_diourbel"/>
+        </record>        
+
+        <record id="commune_dioumane_t_thiekene" model="sn_administrative_division.municipality">
+            <field name="name">DIOUMANE T. THIEKENE</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbacke"/>
+        </record>
+        <record id="commune_ghaye" model="sn_administrative_division.municipality">
+            <field name="name">GHAYE</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbacke"/>
+        </record>
+        <record id="commune_com_mbacke" model="sn_administrative_division.municipality">
+            <field name="name">COM. M’BACKE</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbacke"/>
+        </record>
+        <record id="commune_dalla_gabou" model="sn_administrative_division.municipality">
+            <field name="name">DALLA GABOU</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbacke"/>
+        </record>
+        <record id="commune_darou_nahim" model="sn_administrative_division.municipality">
+            <field name="name">DAROU NAHIM</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbacke"/>
+        </record>
+        <record id="commune_darou_salam_typ" model="sn_administrative_division.municipality">
+            <field name="name">DAROU SALAM TYP</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbacke"/>
+        </record>
+        <record id="commune_dendeye_gouye_gui" model="sn_administrative_division.municipality">
+            <field name="name">DENDEYE GOUYE GUI</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbacke"/>
+        </record>
+        <record id="commune_kael" model="sn_administrative_division.municipality">
+            <field name="name">KAEL</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbacke"/>
+        </record>
+        <record id="commune_madina" model="sn_administrative_division.municipality">
+            <field name="name">MADINA</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbacke"/>
+        </record>
+        <record id="commune_missirah" model="sn_administrative_division.municipality">
+            <field name="name">MISSIRAH</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbacke"/>
+        </record>
+        <record id="commune_sadio" model="sn_administrative_division.municipality">
+            <field name="name">SADIO</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbacke"/>
+        </record>
+        <record id="commune_taiba_tieckene" model="sn_administrative_division.municipality">
+            <field name="name">TAIBA TIECKENE</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbacke"/>
+        </record>
+        <record id="commune_taif" model="sn_administrative_division.municipality">
+            <field name="name">TAÏF</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbacke"/>
+        </record>
+        <record id="commune_touba_mboul" model="sn_administrative_division.municipality">
+            <field name="name">TOUBA M’BOUL</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbacke"/>
+        </record>
+        <record id="commune_touba_fall" model="sn_administrative_division.municipality">
+            <field name="name">TOUBA FALL</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbacke"/>
+        </record>
+        <record id="commune_touba_mosquee" model="sn_administrative_division.municipality">
+            <field name="name">TOUBA MOSQUEE</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbacke"/>
+        </record>
+
+        <record id="commune_bokhol" model="sn_administrative_division.municipality">
+            <field name="name">BOKHOL</field>
+            <field name="department_id" ref="sn_administrative_division.department_dagana"/>
+        </record>
+        <record id="commune_com_dagana" model="sn_administrative_division.municipality">
+            <field name="name">COM. DAGANA</field>
+            <field name="department_id" ref="sn_administrative_division.department_dagana"/>
+        </record>
+        <record id="commune_com_gae" model="sn_administrative_division.municipality">
+            <field name="name">COM. GAE</field>
+            <field name="department_id" ref="sn_administrative_division.department_dagana"/>
+        </record>
+        <record id="commune_ndombo_sandjiry" model="sn_administrative_division.municipality">
+            <field name="name">COM. NDOMBO SANDJIRY</field>
+            <field name="department_id" ref="sn_administrative_division.department_dagana"/>
+        </record>
+        <record id="commune_richard_toll" model="sn_administrative_division.municipality">
+            <field name="name">COM. RICHARD-TOLL</field>
+            <field name="department_id" ref="sn_administrative_division.department_dagana"/>
+        </record>
+        <record id="commune_com_ross_bethio" model="sn_administrative_division.municipality">
+            <field name="name">COM. ROSS-BETHIO</field>
+            <field name="department_id" ref="sn_administrative_division.department_dagana"/>
+        </record>
+        <record id="commune_com_rosso_senegal" model="sn_administrative_division.municipality">
+            <field name="name">COM. ROSSO-SENEGAL</field>
+            <field name="department_id" ref="sn_administrative_division.department_dagana"/>
+        </record>
+        <record id="commune_diama" model="sn_administrative_division.municipality">
+            <field name="name">DIAMA</field>
+            <field name="department_id" ref="sn_administrative_division.department_dagana"/>
+        </record>
+        <record id="commune_mbane" model="sn_administrative_division.municipality">
+            <field name="name">MBANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_dagana"/>
+        </record>
+        <record id="commune_ngnith" model="sn_administrative_division.municipality">
+            <field name="name">NGNITH</field>
+            <field name="department_id" ref="sn_administrative_division.department_dagana"/>
+        </record>
+        <record id="commune_ronkh" model="sn_administrative_division.municipality">
+            <field name="name">RONKH</field>
+            <field name="department_id" ref="sn_administrative_division.department_dagana"/>
+        </record>
+
+        <record id="commune_boke_dialloube" model="sn_administrative_division.municipality">
+            <field name="name">BOKE DIALLOUBE</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+        <record id="commune_com_aere_lao" model="sn_administrative_division.municipality">
+            <field name="name">COM. AERE LAO</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+        <record id="commune_com_bode_lao" model="sn_administrative_division.municipality">
+            <field name="name">COM. BODE LAO</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+        <record id="commune_com_demette" model="sn_administrative_division.municipality">
+            <field name="name">COM. DEMETTE</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+        <record id="commune_com_galoya_toucouleur" model="sn_administrative_division.municipality">
+            <field name="name">COM. GALOYA TOUCOULEUR</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+        <record id="commune_com_gollere" model="sn_administrative_division.municipality">
+            <field name="name">COM. GOLLERE</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+        <record id="commune_com_guede_chantier" model="sn_administrative_division.municipality">
+            <field name="name">COM. GUEDE CHANTIER</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+        <record id="commune_com_mboumba" model="sn_administrative_division.municipality">
+            <field name="name">COM. MBOUMBA</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+        <record id="commune_com_ndiandane" model="sn_administrative_division.municipality">
+            <field name="name">COM. NDIANDANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+        <record id="commune_com_ndioum" model="sn_administrative_division.municipality">
+            <field name="name">COM. NDIOUM</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+        <record id="commune_com_pete" model="sn_administrative_division.municipality">
+            <field name="name">COM. PETE</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+        <record id="commune_com_podor" model="sn_administrative_division.municipality">
+            <field name="name">COM. PODOR</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+        <record id="commune_com_walalde" model="sn_administrative_division.municipality">
+            <field name="name">COM. WALALDE</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+        <record id="commune_dodel" model="sn_administrative_division.municipality">
+            <field name="name">DODEL</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+        <record id="commune_dounga_lao" model="sn_administrative_division.municipality">
+            <field name="name">DOUNGA-LAO</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+        <record id="commune_fanaye" model="sn_administrative_division.municipality">
+            <field name="name">FANAYE</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+        <record id="commune_gamadji_sare" model="sn_administrative_division.municipality">
+            <field name="name">GAMADJI SARE</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+        <record id="commune_guede_village" model="sn_administrative_division.municipality">
+            <field name="name">GUEDE VILLAGE</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+        <record id="commune_mbolo_birane" model="sn_administrative_division.municipality">
+            <field name="name">MBOLO BIRANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+        <record id="commune_medina_ndiathbe" model="sn_administrative_division.municipality">
+            <field name="name">MEDINA NDIATHBE</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+        <record id="commune_mery" model="sn_administrative_division.municipality">
+            <field name="name">MERY</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+        <record id="commune_ndiayene_pendao" model="sn_administrative_division.municipality">
+            <field name="name">NDIAYENE PENDAO</field>
+            <field name="department_id" ref="sn_administrative_division.department_podor"/>
+        </record>
+
+        <record id="commune_diebene_gandiole" model="sn_administrative_division.municipality">
+            <field name="name">DIEBENE GANDIOLE</field>
+            <field name="department_id" ref="sn_administrative_division.department_st_louis"/>
+        </record>
+        <record id="commune_com_mpal" model="sn_administrative_division.municipality">
+            <field name="name">COM. M’PAL</field>
+            <field name="department_id" ref="sn_administrative_division.department_st_louis"/>
+        </record>
+        <record id="commune_com_st_louis" model="sn_administrative_division.municipality">
+            <field name="name">COM. SAINT LOUIS</field>
+            <field name="department_id" ref="sn_administrative_division.department_st_louis"/>
+        </record>
+        <record id="commune_fass_ngom" model="sn_administrative_division.municipality">
+            <field name="name">FASS NGOM</field>
+            <field name="department_id" ref="sn_administrative_division.department_st_louis"/>
+        </record>
+        <record id="commune_gandon" model="sn_administrative_division.municipality">
+            <field name="name">GANDON</field>
+            <field name="department_id" ref="sn_administrative_division.department_st_louis"/>
+        </record>
+
+        <record id="commune_ballou" model="sn_administrative_division.municipality">
+            <field name="name">BALLOU</field>
+            <field name="department_id" ref="sn_administrative_division.department_bakel"/>
+        </record>
+        <record id="commune_BELE" model="sn_administrative_division.municipality">
+            <field name="name">BELE</field>
+            <field name="department_id" ref="sn_administrative_division.department_bakel"/>
+        </record>
+        <record id="commune_com_kidira" model="sn_administrative_division.municipality">
+            <field name="name">COM .KIDIRA</field>
+            <field name="department_id" ref="sn_administrative_division.department_bakel"/>
+        </record>
+        <record id="commune_com_bakel" model="sn_administrative_division.municipality">
+            <field name="name">COM. BAKEL</field>
+            <field name="department_id" ref="sn_administrative_division.department_bakel"/>
+        </record>
+        <record id="commune_com_diawara" model="sn_administrative_division.municipality">
+            <field name="name">COM. DIAWARA</field>
+            <field name="department_id" ref="sn_administrative_division.department_bakel"/>
+        </record>
+        <record id="commune_gabou" model="sn_administrative_division.municipality">
+            <field name="name">GABOU</field>
+            <field name="department_id" ref="sn_administrative_division.department_bakel"/>
+        </record>
+        <record id="commune_gathiary" model="sn_administrative_division.municipality">
+            <field name="name">GATHIARY</field>
+            <field name="department_id" ref="sn_administrative_division.department_bakel"/>
+        </record>
+        <record id="commune_madina_foulbe" model="sn_administrative_division.municipality">
+            <field name="name">MADINA FOULBE</field>
+            <field name="department_id" ref="sn_administrative_division.department_bakel"/>
+        </record>
+        <record id="commune_moudery" model="sn_administrative_division.municipality">
+            <field name="name">MOUDERY</field>
+            <field name="department_id" ref="sn_administrative_division.department_bakel"/>
+        </record>
+        <record id="commune_sadatou" model="sn_administrative_division.municipality">
+            <field name="name">SADATOU</field>
+            <field name="department_id" ref="sn_administrative_division.department_bakel"/>
+        </record>
+        <record id="commune_sinthiou_fissa" model="sn_administrative_division.municipality">
+            <field name="name">SINTHIOU-FISSA</field>
+            <field name="department_id" ref="sn_administrative_division.department_bakel"/>
+        </record>
+        <record id="commune_tomboura" model="sn_administrative_division.municipality">
+            <field name="name">TOUMBOURA</field>
+            <field name="department_id" ref="sn_administrative_division.department_bakel"/>
+        </record>
+
+        <record id="commune_bala" model="sn_administrative_division.municipality">
+            <field name="name">BALA</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudiry"/>
+        </record>
+        <record id="commune_bani_israel" model="sn_administrative_division.municipality">
+            <field name="name">BANI ISRAEL</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudiry"/>
+        </record>
+        <record id="commune_boutoucoufara" model="sn_administrative_division.municipality">
+            <field name="name">BOUTOUCOUFARA</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudiry"/>
+        </record>
+        <record id="commune_boynguel_bamba" model="sn_administrative_division.municipality">
+            <field name="name">BOYNGUEL BAMBA</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudiry"/>
+        </record>
+        <record id="commune_com_goudiry" model="sn_administrative_division.municipality">
+            <field name="name">COM. GOUDIRY</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudiry"/>
+        </record>
+        <record id="commune_com_kothiary" model="sn_administrative_division.municipality">
+            <field name="name">COM. KOTHIARY</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudiry"/>
+        </record>
+        <record id="commune_dianke_makha" model="sn_administrative_division.municipality">
+            <field name="name">DIANKE MAKHA</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudiry"/>
+        </record>
+        <record id="commune_dougue" model="sn_administrative_division.municipality">
+            <field name="name">DOUGUE</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudiry"/>
+        </record>
+        <record id="commune_goumbayel" model="sn_administrative_division.municipality">
+            <field name="name">GOUMBAYEL</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudiry"/>
+        </record>
+        <record id="commune_koar" model="sn_administrative_division.municipality">
+            <field name="name">KOAR</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudiry"/>
+        </record>
+        <record id="commune_komoti" model="sn_administrative_division.municipality">
+            <field name="name">KOMOTI</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudiry"/>
+        </record>
+        <record id="commune_koulor" model="sn_administrative_division.municipality">
+            <field name="name">KOULOR</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudiry"/>
+        </record>
+        <record id="commune_koussan" model="sn_administrative_division.municipality">
+            <field name="name">KOUSSAN</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudiry"/>
+        </record>
+        <record id="commune_sinthiou_bocar_ali" model="sn_administrative_division.municipality">
+            <field name="name">SINTHIOU BOCAR ALI</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudiry"/>
+        </record>
+        <record id="commune_sinthiou_mamadou_boubou" model="sn_administrative_division.municipality">
+            <field name="name">SINTHIOU MAMADOU BOUBOU</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudiry"/>
+        </record>
+
+        <record id="commune_dame" model="sn_administrative_division.municipality">
+            <field name="name">DAME</field>
+            <field name="department_id" ref="sn_administrative_division.department_koupentoum"/>
+        </record>
+        <record id="commune_bamba_thialene" model="sn_administrative_division.municipality">
+            <field name="name">BAMBA THIALENE</field>
+            <field name="department_id" ref="sn_administrative_division.department_koupentoum"/>
+        </record>
+        <record id="commune_com_koumpentoum" model="sn_administrative_division.municipality">
+            <field name="name">COM. KOUMPENTOUM</field>
+            <field name="department_id" ref="sn_administrative_division.department_koupentoum"/>
+        </record>
+        <record id="commune_com_malem_niani" model="sn_administrative_division.municipality">
+            <field name="name">COM. MALEM NIANI</field>
+            <field name="department_id" ref="sn_administrative_division.department_koupentoum"/>
+        </record>
+        <record id="commune_kahene" model="sn_administrative_division.municipality">
+            <field name="name">KAHENE</field>
+            <field name="department_id" ref="sn_administrative_division.department_koupentoum"/>
+        </record>
+        <record id="commune_kouthia_gaydi" model="sn_administrative_division.municipality">
+            <field name="name">KOUTHIA GAYDI</field>
+            <field name="department_id" ref="sn_administrative_division.department_koupentoum"/>
+        </record>
+        <record id="commune_kouthiaba_wolof" model="sn_administrative_division.municipality">
+            <field name="name">KOUTHIABA WOLOF</field>
+            <field name="department_id" ref="sn_administrative_division.department_koupentoum"/>
+        </record>
+        <record id="commune_mereto" model="sn_administrative_division.municipality">
+            <field name="name">MERETO</field>
+            <field name="department_id" ref="sn_administrative_division.department_koupentoum"/>
+        </record>
+        <record id="commune_pass_koto" model="sn_administrative_division.municipality">
+            <field name="name">PASS KOTO</field>
+            <field name="department_id" ref="sn_administrative_division.department_koupentoum"/>
+        </record>
+        <record id="commune_payar" model="sn_administrative_division.municipality">
+            <field name="name">PAYAR</field>
+            <field name="department_id" ref="sn_administrative_division.department_koupentoum"/>
+        </record>
+
+        <record id="commune_doga_babacar" model="sn_administrative_division.municipality">
+            <field name="name">DOGA BABACAR</field>
+            <field name="department_id" ref="sn_administrative_division.department_tambacounda"/>
+        </record>
+        <record id="commune_com_tambacounda" model="sn_administrative_division.municipality">
+            <field name="name">COM. TAMBACOUNDA</field>
+            <field name="department_id" ref="sn_administrative_division.department_tambacounda"/>
+        </record>
+        <record id="commune_dialacoto" model="sn_administrative_division.municipality">
+            <field name="name">DIALACOTO</field>
+            <field name="department_id" ref="sn_administrative_division.department_tambacounda"/>
+        </record>
+        <record id="commune_koussanar" model="sn_administrative_division.municipality">
+            <field name="name">KOUSSANAR</field>
+            <field name="department_id" ref="sn_administrative_division.department_tambacounda"/>
+        </record>
+        <record id="commune_makacoulibatang" model="sn_administrative_division.municipality">
+            <field name="name">MAKACOULIBATANG</field>
+            <field name="department_id" ref="sn_administrative_division.department_tambacounda"/>
+        </record>
+        <record id="commune_missirah" model="sn_administrative_division.municipality">
+            <field name="name">MISSIRAH</field>
+            <field name="department_id" ref="sn_administrative_division.department_tambacounda"/>
+        </record>
+        <record id="commune_nette_boulou" model="sn_administrative_division.municipality">
+            <field name="name">NETTE BOULOU</field>
+            <field name="department_id" ref="sn_administrative_division.department_tambacounda"/>
+        </record>
+        <record id="commune_niani_toucouleur" model="sn_administrative_division.municipality">
+            <field name="name">NIANI TOUCOULEUR</field>
+            <field name="department_id" ref="sn_administrative_division.department_tambacounda"/>
+        </record>
+        <record id="commune_sinthiou_malem" model="sn_administrative_division.municipality">
+            <field name="name">SINTHIOU MALEM</field>
+            <field name="department_id" ref="sn_administrative_division.department_tambacounda"/>
+        </record>
+
+        <record id="commune_com_fass" model="sn_administrative_division.municipality">
+            <field name="name">COM. FASS</field>
+            <field name="department_id" ref="sn_administrative_division.department_guinguineo"/>
+        </record>
+        <record id="commune_com_guinguineo" model="sn_administrative_division.municipality">
+            <field name="name">COM. GUINGUINEO</field>
+            <field name="department_id" ref="sn_administrative_division.department_guinguineo"/>
+        </record>
+        <record id="commune_com_mboss" model="sn_administrative_division.municipality">
+            <field name="name">COM. MBOSS</field>
+            <field name="department_id" ref="sn_administrative_division.department_guinguineo"/>
+        </record>
+        <record id="commune_dara_mboss" model="sn_administrative_division.municipality">
+            <field name="name">DARA MBOSS</field>
+            <field name="department_id" ref="sn_administrative_division.department_guinguineo"/>
+        </record>
+        <record id="commune_gagnick" model="sn_administrative_division.municipality">
+            <field name="name">GAGNICK</field>
+            <field name="department_id" ref="sn_administrative_division.department_guinguineo"/>
+        </record>
+        <record id="commune_khelcom_birame" model="sn_administrative_division.municipality">
+            <field name="name">KHELCOM BIRAME</field>
+            <field name="department_id" ref="sn_administrative_division.department_guinguineo"/>
+        </record>
+        <record id="commune_mbadakhoune" model="sn_administrative_division.municipality">
+            <field name="name">MBADAKHOUNE</field>
+            <field name="department_id" ref="sn_administrative_division.department_guinguineo"/>
+        </record>
+        <record id="commune_ndiago" model="sn_administrative_division.municipality">
+            <field name="name">NDIAGO</field>
+            <field name="department_id" ref="sn_administrative_division.department_guinguineo"/>
+        </record>
+        <record id="commune_ngathie_naoude" model="sn_administrative_division.municipality">
+            <field name="name">NGATHIE NAOUDE</field>
+            <field name="department_id" ref="sn_administrative_division.department_guinguineo"/>
+        </record>
+        <record id="commune_nguelou" model="sn_administrative_division.municipality">
+            <field name="name">NGUELOU</field>
+            <field name="department_id" ref="sn_administrative_division.department_guinguineo"/>
+        </record>
+        <record id="commune_ourour" model="sn_administrative_division.municipality">
+            <field name="name">OUROUR</field>
+            <field name="department_id" ref="sn_administrative_division.department_guinguineo"/>
+        </record>
+        <record id="commune_panal_ouolof" model="sn_administrative_division.municipality">
+            <field name="name">PANAL OUOLOF</field>
+            <field name="department_id" ref="sn_administrative_division.department_guinguineo"/>
+        </record>
+
+        <record id="commune_com_gandiaye" model="sn_administrative_division.municipality">
+            <field name="name">COM. GANDIAYE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaolack"/>
+        </record>
+        <record id="commune_com_kahone" model="sn_administrative_division.municipality">
+            <field name="name">COM. KAHONE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaolack"/>
+        </record>
+        <record id="commune_com_kaolack" model="sn_administrative_division.municipality">
+            <field name="name">COM. KAOLACK</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaolack"/>
+        </record>
+        <record id="commune_com_ndoffane" model="sn_administrative_division.municipality">
+            <field name="name">COM. NDOFFANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaolack"/>
+        </record>
+        <record id="commune_com_sibassor" model="sn_administrative_division.municipality">
+            <field name="name">COM. SIBASSOR</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaolack"/>
+        </record>
+        <record id="commune_dya" model="sn_administrative_division.municipality">
+            <field name="name">DYA</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaolack"/>
+        </record>
+        <record id="commune_keur_baka" model="sn_administrative_division.municipality">
+            <field name="name">KEUR BAKA</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaolack"/>
+        </record>
+        <record id="commune_keur_soce" model="sn_administrative_division.municipality">
+            <field name="name">KEUR SOCE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaolack"/>
+        </record>
+        <record id="commune_latmingue" model="sn_administrative_division.municipality">
+            <field name="name">LATMINGUE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaolack"/>
+        </record>
+        <record id="commune_ndiaffate" model="sn_administrative_division.municipality">
+            <field name="name">NDIAFFATE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaolack"/>
+        </record>
+        <record id="commune_ndiebel" model="sn_administrative_division.municipality">
+            <field name="name">NDIEBEL</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaolack"/>
+        </record>
+        <record id="commune_ndiedieng" model="sn_administrative_division.municipality">
+            <field name="name">NDIEDIENG</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaolack"/>
+        </record>
+        <record id="commune_thiare" model="sn_administrative_division.municipality">
+            <field name="name">THIARE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaolack"/>
+        </record>
+        <record id="commune_thiomby" model="sn_administrative_division.municipality">
+            <field name="name">THIOMBY</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaolack"/>
+        </record>
+
+        <record id="commune_com_keur_madiabel" model="sn_administrative_division.municipality">
+            <field name="name">COM. KEUR MADIABEL</field>
+            <field name="department_id" ref="sn_administrative_division.department_nioro"/>
+        </record>
+        <record id="commune_com_nioro" model="sn_administrative_division.municipality">
+            <field name="name">COM. NIORO</field>
+            <field name="department_id" ref="sn_administrative_division.department_nioro"/>
+        </record>
+        <record id="commune_dabaly" model="sn_administrative_division.municipality">
+            <field name="name">DABALY</field>
+            <field name="department_id" ref="sn_administrative_division.department_nioro"/>
+        </record>
+        <record id="commune_darou_salam_" model="sn_administrative_division.municipality">
+            <field name="name">DAROU SALAM</field>
+            <field name="department_id" ref="sn_administrative_division.department_nioro"/>
+        </record>
+        <record id="commune_gainte_kaye" model="sn_administrative_division.municipality">
+            <field name="name">GAINTE KAYE</field>
+            <field name="department_id" ref="sn_administrative_division.department_nioro"/>
+        </record>
+        <record id="commune_k_mandongo" model="sn_administrative_division.municipality">
+            <field name="name">K. MANDONGO</field>
+            <field name="department_id" ref="sn_administrative_division.department_nioro"/>
+        </record>
+        <record id="commune_kayemor" model="sn_administrative_division.municipality">
+            <field name="name">KAYEMOR</field>
+            <field name="department_id" ref="sn_administrative_division.department_nioro"/>
+        </record>
+        <record id="commune_keur_maba_diakhou" model="sn_administrative_division.municipality">
+            <field name="name">KEUR MABA DIAKHOU</field>
+            <field name="department_id" ref="sn_administrative_division.department_nioro"/>
+        </record>
+        <record id="commune_medina_sabakh" model="sn_administrative_division.municipality">
+            <field name="name">MEDINA-SABAKH</field>
+            <field name="department_id" ref="sn_administrative_division.department_nioro"/>
+        </record>
+        <record id="commune_ndrame_escale" model="sn_administrative_division.municipality">
+            <field name="name">NDRAME ESCALE</field>
+            <field name="department_id" ref="sn_administrative_division.department_nioro"/>
+        </record>
+        <record id="commune_ngayene" model="sn_administrative_division.municipality">
+            <field name="name">NGAYENE</field>
+            <field name="department_id" ref="sn_administrative_division.department_nioro"/>
+        </record>
+        <record id="commune_paoskoto" model="sn_administrative_division.municipality">
+            <field name="name">PAOSKOTO</field>
+            <field name="department_id" ref="sn_administrative_division.department_nioro"/>
+        </record>
+        <record id="commune_porokhane" model="sn_administrative_division.municipality">
+            <field name="name">POROKHANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_nioro"/>
+        </record>
+        <record id="commune_taiba_niassene" model="sn_administrative_division.municipality">
+            <field name="name">TAÏBA NIASSENE</field>
+            <field name="department_id" ref="sn_administrative_division.department_nioro"/>
+        </record>
+        <record id="commune_wack_ngouna" model="sn_administrative_division.municipality">
+            <field name="name">WACK NGOUNA</field>
+            <field name="department_id" ref="sn_administrative_division.department_nioro"/>
+        </record>
+
+        <record id="commune_diaganiao" model="sn_administrative_division.municipality">
+            <field name="name">DIAGANIAO</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbour"/>
+        </record>
+        <record id="commune_gueniene" model="sn_administrative_division.municipality">
+            <field name="name">GUENIENE</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbour"/>
+        </record>
+        <record id="commune_com_gaparou" model="sn_administrative_division.municipality">
+            <field name="name">COM. GAPAROU</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbour"/>
+        </record>
+        <record id="commune_com_guekokh" model="sn_administrative_division.municipality">
+            <field name="name">COM. GUEKOKH</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbour"/>
+        </record>
+        <record id="commune_com_joal_fadiouth" model="sn_administrative_division.municipality">
+            <field name="name">COM. JOAL-FADIOUTH</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbour"/>
+        </record>
+        <record id="commune_com_mbour" model="sn_administrative_division.municipality">
+            <field name="name">COM. M’BOUR</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbour"/>
+        </record>
+        <record id="commune_com_popoguine" model="sn_administrative_division.municipality">
+            <field name="name">COM. POPOGUINE</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbour"/>
+        </record>
+        <record id="commune_com_saly_portudal" model="sn_administrative_division.municipality">
+            <field name="name">COM. SALY PORTUDAL</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbour"/>
+        </record>
+        <record id="commune_com_somone" model="sn_administrative_division.municipality">
+            <field name="name">COM. SOMONE</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbour"/>
+        </record>
+        <record id="commune_com_thiadaye" model="sn_administrative_division.municipality">
+            <field name="name">COM. THIADIAYE</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbour"/>
+        </record>
+        <record id="commune_diass" model="sn_administrative_division.municipality">
+            <field name="name">DIASS</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbour"/>
+        </record>
+        <record id="commune_fissel" model="sn_administrative_division.municipality">
+            <field name="name">FISSEL</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbour"/>
+        </record>
+        <record id="commune_malicounda" model="sn_administrative_division.municipality">
+            <field name="name">MALICOUNDA</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbour"/>
+        </record>
+        <record id="commune_sandiara" model="sn_administrative_division.municipality">
+            <field name="name">SANDIARA</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbour"/>
+        </record>
+        <record id="commune_sessene" model="sn_administrative_division.municipality">
+            <field name="name">SESSENE</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbour"/>
+        </record>
+        <record id="commune_sindia" model="sn_administrative_division.municipality">
+            <field name="name">SINDIA</field>
+            <field name="department_id" ref="sn_administrative_division.department_mbour"/>
+        </record>
+
+        <record id="commune_dieyene_sirakh" model="sn_administrative_division.municipality">
+            <field name="name">DIEYENE SIRAKH</field>
+            <field name="department_id" ref="sn_administrative_division.department_thies"/>
+        </record>
+        <record id="commune_goundiane" model="sn_administrative_division.municipality">
+            <field name="name">GOUNDIANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_thies"/>
+        </record>
+        <record id="commune_com_cayar" model="sn_administrative_division.municipality">
+            <field name="name">COM. CAYAR</field>
+            <field name="department_id" ref="sn_administrative_division.department_thies"/>
+        </record>
+        <record id="commune_com_khombole" model="sn_administrative_division.municipality">
+            <field name="name">COM. KHOMBOLE</field>
+            <field name="department_id" ref="sn_administrative_division.department_thies"/>
+        </record>
+        <record id="commune_com_pout" model="sn_administrative_division.municipality">
+            <field name="name">COM. POUT</field>
+            <field name="department_id" ref="sn_administrative_division.department_thies"/>
+        </record>
+        <record id="commune_diender_guedji" model="sn_administrative_division.municipality">
+            <field name="name">DIENDER GUEDJI</field>
+            <field name="department_id" ref="sn_administrative_division.department_thies"/>
+        </record>
+        <record id="commune_fandene" model="sn_administrative_division.municipality">
+            <field name="name">FANDENE</field>
+            <field name="department_id" ref="sn_administrative_division.department_thies"/>
+        </record>
+        <record id="commune_keur_moussa" model="sn_administrative_division.municipality">
+            <field name="name">KEUR MOUSSA</field>
+            <field name="department_id" ref="sn_administrative_division.department_thies"/>
+        </record>
+        <record id="commune_notto" model="sn_administrative_division.municipality">
+            <field name="name">NOTTO</field>
+            <field name="department_id" ref="sn_administrative_division.department_thies"/>
+        </record>
+        <record id="commune_tassette" model="sn_administrative_division.municipality">
+            <field name="name">TASSETTE</field>
+            <field name="department_id" ref="sn_administrative_division.department_thies"/>
+        </record>
+        <record id="commune_thienaba" model="sn_administrative_division.municipality">
+            <field name="name">THIENABA</field>
+            <field name="department_id" ref="sn_administrative_division.department_thies"/>
+        </record>
+        <record id="commune_thies_est" model="sn_administrative_division.municipality">
+            <field name="name">THIES EST</field>
+            <field name="department_id" ref="sn_administrative_division.department_thies"/>
+        </record>
+        <record id="commune_thies_nord" model="sn_administrative_division.municipality">
+            <field name="name">THIES NORD</field>
+            <field name="department_id" ref="sn_administrative_division.department_thies"/>
+        </record>
+        <record id="commune_thies_ouest" model="sn_administrative_division.municipality">
+            <field name="name">THIES OUEST</field>
+            <field name="department_id" ref="sn_administrative_division.department_thies"/>
+        </record>
+        <record id="commune_touba_toul" model="sn_administrative_division.municipality">
+            <field name="name">TOUBA TOUL</field>
+            <field name="department_id" ref="sn_administrative_division.department_thies"/>
+        </record>
+
+        <record id="commune_gandiouf" model="sn_administrative_division.municipality">
+            <field name="name">GANDIOUF</field>
+            <field name="department_id" ref="sn_administrative_division.department_tivaouane"/>
+        </record>
+        <record id="commune_cherif_lo" model="sn_administrative_division.municipality">
+            <field name="name">CHERIF LÖ</field>
+            <field name="department_id" ref="sn_administrative_division.department_tivaouane"/>
+        </record>
+        <record id="commune_com_mboro" model="sn_administrative_division.municipality">
+            <field name="name">COM. M’BORO</field>
+            <field name="department_id" ref="sn_administrative_division.department_tivaouane"/>
+        </record>
+        <record id="commune_com_mekhe" model="sn_administrative_division.municipality">
+            <field name="name">COM. MEKHE</field>
+            <field name="department_id" ref="sn_administrative_division.department_tivaouane"/>
+        </record>
+        <record id="commune_com_tivaouane" model="sn_administrative_division.municipality">
+            <field name="name">COM. TIVAOUANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_tivaouane"/>
+        </record>
+        <record id="commune_darou_khoudoss" model="sn_administrative_division.municipality">
+            <field name="name">DAROU KHOUDOSS</field>
+            <field name="department_id" ref="sn_administrative_division.department_tivaouane"/>
+        </record>
+        <record id="commune_koul" model="sn_administrative_division.municipality">
+            <field name="name">KOUL</field>
+            <field name="department_id" ref="sn_administrative_division.department_tivaouane"/>
+        </record>
+        <record id="commune_mbayene" model="sn_administrative_division.municipality">
+            <field name="name">M’BAYENE</field>
+            <field name="department_id" ref="sn_administrative_division.department_tivaouane"/>
+        </record>
+        <record id="commune_meouane" model="sn_administrative_division.municipality">
+            <field name="name">MEOUANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_tivaouane"/>
+        </record>
+        <record id="commune_merina_dakhar" model="sn_administrative_division.municipality">
+            <field name="name">MERINA DAKHAR</field>
+            <field name="department_id" ref="sn_administrative_division.department_tivaouane"/>
+        </record>
+        <record id="commune_mont_rolland" model="sn_administrative_division.municipality">
+            <field name="name">MONT- ROLLAND</field>
+            <field name="department_id" ref="sn_administrative_division.department_tivaouane"/>
+        </record>
+        <record id="commune_niakhene" model="sn_administrative_division.municipality">
+            <field name="name">NIAKHENE</field>
+            <field name="department_id" ref="sn_administrative_division.department_tivaouane"/>
+        </record>
+        <record id="commune_notto_gouye_diame" model="sn_administrative_division.municipality">
+            <field name="name">NOTTO GOUYE DIAMA</field>
+            <field name="department_id" ref="sn_administrative_division.department_tivaouane"/>
+        </record>
+        <record id="commune_pambal" model="sn_administrative_division.municipality">
+            <field name="name">PAMBAL</field>
+            <field name="department_id" ref="sn_administrative_division.department_tivaouane"/>
+        </record>
+        <record id="commune_pekesse" model="sn_administrative_division.municipality">
+            <field name="name">PEKESSE</field>
+            <field name="department_id" ref="sn_administrative_division.department_tivaouane"/>
+        </record>
+        <record id="commune_pire_goureye" model="sn_administrative_division.municipality">
+            <field name="name">PIRE GOUREYE</field>
+            <field name="department_id" ref="sn_administrative_division.department_tivaouane"/>
+        </record>
+        <record id="commune_taiba_diaye" model="sn_administrative_division.municipality">
+            <field name="name">TAIBA ’DIAYE</field>
+            <field name="department_id" ref="sn_administrative_division.department_tivaouane"/>
+        </record>
+        <record id="commune_thilmakha" model="sn_administrative_division.municipality">
+            <field name="name">THILMAKHA</field>
+            <field name="department_id" ref="sn_administrative_division.department_tivaouane"/>
+        </record>
+
+        <record id="commune_babegne_ouolof" model="sn_administrative_division.municipality">
+            <field name="name">BADEGNE OUOLOF</field>
+            <field name="department_id" ref="sn_administrative_division.department_kebemer"/>
+        </record>
+        <record id="commune_com_gueoul" model="sn_administrative_division.municipality">
+            <field name="name">COM. GUEOUL</field>
+            <field name="department_id" ref="sn_administrative_division.department_kebemer"/>
+        </record>
+        <record id="commune_com_kebemer" model="sn_administrative_division.municipality">
+            <field name="name">COM. KEBEMER</field>
+            <field name="department_id" ref="sn_administrative_division.department_kebemer"/>
+        </record>
+        <record id="commune_darou_marnane_" model="sn_administrative_division.municipality">
+            <field name="name">DAROU MARNANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kebemer"/>
+        </record>
+        <record id="commune_darou_mousty" model="sn_administrative_division.municipality">
+            <field name="name">DAROU MOUSTY</field>
+            <field name="department_id" ref="sn_administrative_division.department_kebemer"/>
+        </record>
+        <record id="commune_diokoul_diawrigne" model="sn_administrative_division.municipality">
+            <field name="name">DIOKOUL DIAWRIGNE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kebemer"/>
+        </record>
+        <record id="commune_kab_gaye" model="sn_administrative_division.municipality">
+            <field name="name">KAB GAYE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kebemer"/>
+        </record>
+        <record id="commune_kanene_ndiob" model="sn_administrative_division.municipality">
+            <field name="name">KANENE NDIOB</field>
+            <field name="department_id" ref="sn_administrative_division.department_kebemer"/>
+        </record>
+        <record id="commune_loro" model="sn_administrative_division.municipality">
+            <field name="name">LORO</field>
+            <field name="department_id" ref="sn_administrative_division.department_kebemer"/>
+        </record>
+        <record id="commune_mbacke_cadior" model="sn_administrative_division.municipality">
+            <field name="name">MBACKE CADIOR</field>
+            <field name="department_id" ref="sn_administrative_division.department_kebemer"/>
+        </record>
+        <record id="commune_mbadiane" model="sn_administrative_division.municipality">
+            <field name="name">MBADIANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kebemer"/>
+        </record>
+        <record id="commune_ndande" model="sn_administrative_division.municipality">
+            <field name="name">NDANDE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kebemer"/>
+        </record>
+        <record id="commune_ndoyene__" model="sn_administrative_division.municipality">
+            <field name="name">NDOYENE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kebemer"/>
+        </record>
+        <record id="commune_ngourane_ouolof_" model="sn_administrative_division.municipality">
+            <field name="name">NGOURANE OUOLOF</field>
+            <field name="department_id" ref="sn_administrative_division.department_kebemer"/>
+        </record>
+        <record id="commune_sagatta_gueth" model="sn_administrative_division.municipality">
+            <field name="name">SAGATTA GUETH</field>
+            <field name="department_id" ref="sn_administrative_division.department_kebemer"/>
+        </record>
+        <record id="commune_sam_yabal" model="sn_administrative_division.municipality">
+            <field name="name">SAM YABAL</field>
+            <field name="department_id" ref="sn_administrative_division.department_kebemer"/>
+        </record>
+        <record id="commune_thieppe_" model="sn_administrative_division.municipality">
+            <field name="name">THIEPPE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kebemer"/>
+        </record>
+        <record id="commune_thiolom_fall" model="sn_administrative_division.municipality">
+            <field name="name">THIOLOM FALL</field>
+            <field name="department_id" ref="sn_administrative_division.department_kebemer"/>
+        </record>
+        <record id="commune_touba_merina" model="sn_administrative_division.municipality">
+            <field name="name">TOUBA MERINA</field>
+            <field name="department_id" ref="sn_administrative_division.department_kebemer"/>
+        </record>
+
+        <record id="commune_affe_djoloff" model="sn_administrative_division.municipality">
+            <field name="name">AFFE DJOLOFF</field>
+            <field name="department_id" ref="sn_administrative_division.department_linguere"/>
+        </record>
+        <record id="commune_barkedji" model="sn_administrative_division.municipality">
+            <field name="name">BARKEDJI</field>
+            <field name="department_id" ref="sn_administrative_division.department_linguere"/>
+        </record>
+        <record id="commune_boulal" model="sn_administrative_division.municipality">
+            <field name="name">BOULAL</field>
+            <field name="department_id" ref="sn_administrative_division.department_linguere"/>
+        </record>
+        <record id="commune_com_dahra" model="sn_administrative_division.municipality">
+            <field name="name">COM. DAHRA</field>
+            <field name="department_id" ref="sn_administrative_division.department_linguere"/>
+        </record>
+        <record id="commune_com_linguere" model="sn_administrative_division.municipality">
+            <field name="name">COM. LINGUERE</field>
+            <field name="department_id" ref="sn_administrative_division.department_linguere"/>
+        </record>
+        <record id="commune_com_mbeuleukhe" model="sn_administrative_division.municipality">
+            <field name="name">COM. MBEULEUKHE</field>
+            <field name="department_id" ref="sn_administrative_division.department_linguere"/>
+        </record>
+        <record id="commune_deali" model="sn_administrative_division.municipality">
+            <field name="name">DEALI</field>
+            <field name="department_id" ref="sn_administrative_division.department_linguere"/>
+        </record>
+        <record id="commune_dodji" model="sn_administrative_division.municipality">
+            <field name="name">DODJI</field>
+            <field name="department_id" ref="sn_administrative_division.department_linguere"/>
+        </record>
+        <record id="commune_gassane" model="sn_administrative_division.municipality">
+            <field name="name">GASSANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_linguere"/>
+        </record>
+        <record id="commune_kamb" model="sn_administrative_division.municipality">
+            <field name="name">KAMB</field>
+            <field name="department_id" ref="sn_administrative_division.department_linguere"/>
+        </record>
+        <record id="commune_labgar" model="sn_administrative_division.municipality">
+            <field name="name">LABGAR</field>
+            <field name="department_id" ref="sn_administrative_division.department_linguere"/>
+        </record>
+        <record id="commune_mboula" model="sn_administrative_division.municipality">
+            <field name="name">MBOULA</field>
+            <field name="department_id" ref="sn_administrative_division.department_linguere"/>
+        </record>
+        <record id="commune_ouarkhoh" model="sn_administrative_division.municipality">
+            <field name="name">OUARKHOH</field>
+            <field name="department_id" ref="sn_administrative_division.department_linguere"/>
+        </record>
+        <record id="commune_sagatta_djolof" model="sn_administrative_division.municipality">
+            <field name="name">SAGATTA DJOLOF</field>
+            <field name="department_id" ref="sn_administrative_division.department_linguere"/>
+        </record>
+        <record id="commune_tessekre_forage" model="sn_administrative_division.municipality">
+            <field name="name">TESSEKRE FORAGE</field>
+            <field name="department_id" ref="sn_administrative_division.department_linguere"/>
+        </record>
+        <record id="commune_thiamene_djolof" model="sn_administrative_division.municipality">
+            <field name="name">THIAMENE DJOLOF</field>
+            <field name="department_id" ref="sn_administrative_division.department_linguere"/>
+        </record>
+        <record id="commune_thiargny" model="sn_administrative_division.municipality">
+            <field name="name">THIARGNY</field>
+            <field name="department_id" ref="sn_administrative_division.department_linguere"/>
+        </record>
+        <record id="commune_thiel" model="sn_administrative_division.municipality">
+            <field name="name">THIEL</field>
+            <field name="department_id" ref="sn_administrative_division.department_linguere"/>
+        </record>
+        <record id="commune_yang_yang" model="sn_administrative_division.municipality">
+            <field name="name">YANG YANG</field>
+            <field name="department_id" ref="sn_administrative_division.department_linguere"/>
+        </record>
+
+        <record id="commune_coki" model="sn_administrative_division.municipality">
+            <field name="name">COKI</field>
+            <field name="department_id" ref="sn_administrative_division.department_louga"/>
+        </record>
+        <record id="commune_com_louga" model="sn_administrative_division.municipality">
+            <field name="name">COM. LOUGA</field>
+            <field name="department_id" ref="sn_administrative_division.department_louga"/>
+        </record>
+        <record id="commune_com_ndiagne" model="sn_administrative_division.municipality">
+            <field name="name">COM. NDIAGNE</field>
+            <field name="department_id" ref="sn_administrative_division.department_louga"/>
+        </record>
+        <record id="commune_gande" model="sn_administrative_division.municipality">
+            <field name="name">GANDE</field>
+            <field name="department_id" ref="sn_administrative_division.department_louga"/>
+        </record>
+        <record id="commune_guet_ardo" model="sn_administrative_division.municipality">
+            <field name="name">GUET ARDO</field>
+            <field name="department_id" ref="sn_administrative_division.department_louga"/>
+        </record>
+        <record id="commune_k_momar_sarr" model="sn_administrative_division.municipality">
+            <field name="name">K.MOMAR SARR</field>
+            <field name="department_id" ref="sn_administrative_division.department_louga"/>
+        </record>
+        <record id="commune_kelle_gueye" model="sn_administrative_division.municipality">
+            <field name="name">KELLE GUEYE</field>
+            <field name="department_id" ref="sn_administrative_division.department_louga"/>
+        </record>
+        <record id="commune_leona" model="sn_administrative_division.municipality">
+            <field name="name">LEONA</field>
+            <field name="department_id" ref="sn_administrative_division.department_louga"/>
+        </record>
+        <record id="commune_mbediene" model="sn_administrative_division.municipality">
+            <field name="name">MBEDIENE</field>
+            <field name="department_id" ref="sn_administrative_division.department_louga"/>
+        </record>
+        <record id="commune_nguer" model="sn_administrative_division.municipality">
+            <field name="name">NGUER MALAL</field>
+            <field name="department_id" ref="sn_administrative_division.department_louga"/>
+        </record>
+        <record id="commune_ngueune_sarr" model="sn_administrative_division.municipality">
+            <field name="name">NGUEUNE SARR</field>
+            <field name="department_id" ref="sn_administrative_division.department_louga"/>
+        </record>
+        <record id="commune_nguidile" model="sn_administrative_division.municipality">
+            <field name="name">NGUIDILE</field>
+            <field name="department_id" ref="sn_administrative_division.department_louga"/>
+        </record>
+        <record id="commune_niomre" model="sn_administrative_division.municipality">
+            <field name="name">NIOMRE</field>
+            <field name="department_id" ref="sn_administrative_division.department_louga"/>
+        </record>
+        <record id="commune_pete_ouarack" model="sn_administrative_division.municipality">
+            <field name="name">PETE OUARACK</field>
+            <field name="department_id" ref="sn_administrative_division.department_louga"/>
+        </record>
+        <record id="commune_sakal" model="sn_administrative_division.municipality">
+            <field name="name">SAKAL</field>
+            <field name="department_id" ref="sn_administrative_division.department_louga"/>
+        </record>
+        <record id="commune_syer" model="sn_administrative_division.municipality">
+            <field name="name">SYER</field>
+            <field name="department_id" ref="sn_administrative_division.department_louga"/>
+        </record>
+        <record id="commune_thiamene_cayor" model="sn_administrative_division.municipality">
+            <field name="name">THIAMENE CAYOR</field>
+            <field name="department_id" ref="sn_administrative_division.department_louga"/>
+        </record>
+
+        <record id="commune_com_diakhao" model="sn_administrative_division.municipality">
+            <field name="name">COM. DIAKHAO</field>
+            <field name="department_id" ref="sn_administrative_division.department_fatick"/>
+        </record>
+        <record id="commune_com_diofior" model="sn_administrative_division.municipality">
+            <field name="name">COM. DIOFIOR</field>
+            <field name="department_id" ref="sn_administrative_division.department_fatick"/>
+        </record>
+        <record id="commune_com_fatick" model="sn_administrative_division.municipality">
+            <field name="name">COM. FATICK</field>
+            <field name="department_id" ref="sn_administrative_division.department_fatick"/>
+        </record>
+        <record id="commune_diaoule" model="sn_administrative_division.municipality">
+            <field name="name">DIAOULE</field>
+            <field name="department_id" ref="sn_administrative_division.department_fatick"/>
+        </record>
+        <record id="commune_diarere" model="sn_administrative_division.municipality">
+            <field name="name">DIARERE</field>
+            <field name="department_id" ref="sn_administrative_division.department_fatick"/>
+        </record>
+        <record id="commune_diouroup" model="sn_administrative_division.municipality">
+            <field name="name">DIOUROUP</field>
+            <field name="department_id" ref="sn_administrative_division.department_fatick"/>
+        </record>
+        <record id="commune_djilasse" model="sn_administrative_division.municipality">
+            <field name="name">DJILASSE</field>
+            <field name="department_id" ref="sn_administrative_division.department_fatick"/>
+        </record>
+        <record id="commune_fimela" model="sn_administrative_division.municipality">
+            <field name="name">FIMELA</field>
+            <field name="department_id" ref="sn_administrative_division.department_fatick"/>
+        </record>
+        <record id="commune_loul_sessene" model="sn_administrative_division.municipality">
+            <field name="name">LOUL-SESSENE</field>
+            <field name="department_id" ref="sn_administrative_division.department_fatick"/>
+        </record>
+        <record id="commune_mbelacadiao" model="sn_administrative_division.municipality">
+            <field name="name">MBELACADIAO</field>
+            <field name="department_id" ref="sn_administrative_division.department_fatick"/>
+        </record>
+        <record id="commune_ndiob" model="sn_administrative_division.municipality">
+            <field name="name">NDIOB</field>
+            <field name="department_id" ref="sn_administrative_division.department_fatick"/>
+        </record>
+        <record id="commune_ngayokheme" model="sn_administrative_division.municipality">
+            <field name="name">NGAYOKHEME</field>
+            <field name="department_id" ref="sn_administrative_division.department_fatick"/>
+        </record>
+        <record id="commune_niakhar" model="sn_administrative_division.municipality">
+            <field name="name">NIAKHAR</field>
+            <field name="department_id" ref="sn_administrative_division.department_fatick"/>
+        </record>
+        <record id="commune_palmarin_facao" model="sn_administrative_division.municipality">
+            <field name="name">PALMARIN FACAO</field>
+            <field name="department_id" ref="sn_administrative_division.department_fatick"/>
+        </record>
+        <record id="commune_patar" model="sn_administrative_division.municipality">
+            <field name="name">PATAR</field>
+            <field name="department_id" ref="sn_administrative_division.department_fatick"/>
+        </record>
+        <record id="commune_tattaguine" model="sn_administrative_division.municipality">
+            <field name="name">TATTAGUINE</field>
+            <field name="department_id" ref="sn_administrative_division.department_fatick"/>
+        </record>
+        <record id="commune_thiare_ndialgui" model="sn_administrative_division.municipality">
+            <field name="name">THIARE NDIALGUI</field>
+            <field name="department_id" ref="sn_administrative_division.department_fatick"/>
+        </record>
+
+        <record id="commune_bassoul" model="sn_administrative_division.municipality">
+            <field name="name">BASSOUL</field>
+            <field name="department_id" ref="sn_administrative_division.department_foundiougne"/>
+        </record>
+        <record id="commune_com_foundiougne" model="sn_administrative_division.municipality">
+            <field name="name">COM. FOUNDIOUGNE</field>
+            <field name="department_id" ref="sn_administrative_division.department_foundiougne"/>
+        </record>
+        <record id="commune_com_karang_poste" model="sn_administrative_division.municipality">
+            <field name="name">COM. KARANG POSTE</field>
+            <field name="department_id" ref="sn_administrative_division.department_foundiougne"/>
+        </record>
+        <record id="commune_com_passy" model="sn_administrative_division.municipality">
+            <field name="name">COM. PASSY</field>
+            <field name="department_id" ref="sn_administrative_division.department_foundiougne"/>
+        </record>
+        <record id="commune_com_sokone" model="sn_administrative_division.municipality">
+            <field name="name">COM. SOKONE</field>
+            <field name="department_id" ref="sn_administrative_division.department_foundiougne"/>
+        </record>
+        <record id="commune_com_soum" model="sn_administrative_division.municipality">
+            <field name="name">COM. SOUM</field>
+            <field name="department_id" ref="sn_administrative_division.department_foundiougne"/>
+        </record>
+        <record id="commune_diagane_barka" model="sn_administrative_division.municipality">
+            <field name="name">DIAGANE BARKA</field>
+            <field name="department_id" ref="sn_administrative_division.department_foundiougne"/>
+        </record>
+        <record id="commune_dionewar" model="sn_administrative_division.municipality">
+            <field name="name">DIONEWAR</field>
+            <field name="department_id" ref="sn_administrative_division.department_foundiougne"/>
+        </record>
+        <record id="commune_diossong" model="sn_administrative_division.municipality">
+            <field name="name">DIOSSONG</field>
+            <field name="department_id" ref="sn_administrative_division.department_foundiougne"/>
+        </record>
+        <record id="commune_djilor" model="sn_administrative_division.municipality">
+            <field name="name">DJILOR</field>
+            <field name="department_id" ref="sn_administrative_division.department_foundiougne"/>
+        </record>
+        <record id="commune_djirnda" model="sn_administrative_division.municipality">
+            <field name="name">DJIRNDA</field>
+            <field name="department_id" ref="sn_administrative_division.department_foundiougne"/>
+        </record>
+        <record id="commune_keur_samba_gueye" model="sn_administrative_division.municipality">
+            <field name="name">KEUR SAMBA GUEYE</field>
+            <field name="department_id" ref="sn_administrative_division.department_foundiougne"/>
+        </record>
+        <record id="commune_keur_s_diane" model="sn_administrative_division.municipality">
+            <field name="name">KEUR S.DIANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_foundiougne"/>
+        </record>
+        <record id="commune_mbam" model="sn_administrative_division.municipality">
+            <field name="name">MBAM</field>
+            <field name="department_id" ref="sn_administrative_division.department_foundiougne"/>
+        </record>
+        <record id="commune_niassene_" model="sn_administrative_division.municipality">
+            <field name="name">NIASSENE</field>
+            <field name="department_id" ref="sn_administrative_division.department_foundiougne"/>
+        </record>
+        <record id="commune_nioro_alassane_tall" model="sn_administrative_division.municipality">
+            <field name="name">NIORO ALASSANE TALL</field>
+            <field name="department_id" ref="sn_administrative_division.department_foundiougne"/>
+        </record>
+        <record id="commune_toubacouta" model="sn_administrative_division.municipality">
+            <field name="name">TOUBACOUTA</field>
+            <field name="department_id" ref="sn_administrative_division.department_foundiougne"/>
+        </record>
+
+        <record id="commune_colobane" model="sn_administrative_division.municipality">
+            <field name="name">COLOBANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_gossas"/>
+        </record>
+        <record id="commune_com_gossas" model="sn_administrative_division.municipality">
+            <field name="name">COM. GOSSAS</field>
+            <field name="department_id" ref="sn_administrative_division.department_gossas"/>
+        </record>
+        <record id="commune_mbar" model="sn_administrative_division.municipality">
+            <field name="name">MBAR</field>
+            <field name="department_id" ref="sn_administrative_division.department_gossas"/>
+        </record>
+        <record id="commune_ndiene_lagane" model="sn_administrative_division.municipality">
+            <field name="name">NDIENE LAGANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_gossas"/>
+        </record>
+        <record id="commune_ouadiour" model="sn_administrative_division.municipality">
+            <field name="name">OUADIOUR</field>
+            <field name="department_id" ref="sn_administrative_division.department_gossas"/>
+        </record>
+        <record id="commune_patar_lia" model="sn_administrative_division.municipality">
+            <field name="name">PATAR LIA</field>
+            <field name="department_id" ref="sn_administrative_division.department_gossas"/>
+        </record>
+
+        <record id="commune_bagadadji" model="sn_administrative_division.municipality">
+            <field name="name">BAGADADJI</field>
+            <field name="department_id" ref="sn_administrative_division.department_kolda"/>
+        </record>
+        <record id="commune_com_dabo" model="sn_administrative_division.municipality">
+            <field name="name">COM. DABO</field>
+            <field name="department_id" ref="sn_administrative_division.department_kolda"/>
+        </record>
+        <record id="commune_com_kolda" model="sn_administrative_division.municipality">
+            <field name="name">COM. KOLDA</field>
+            <field name="department_id" ref="sn_administrative_division.department_kolda"/>
+        </record>
+        <record id="commune_com_salikegne_" model="sn_administrative_division.municipality">
+            <field name="name">COM. SALIKEGNE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kolda"/>
+        </record>
+        <record id="commune_com_sare_yoba_diega" model="sn_administrative_division.municipality">
+            <field name="name">COM. SARE YOBA DIEGA</field>
+            <field name="department_id" ref="sn_administrative_division.department_kolda"/>
+        </record>
+        <record id="commune_coumbacara" model="sn_administrative_division.municipality">
+            <field name="name">COUMBACARA</field>
+            <field name="department_id" ref="sn_administrative_division.department_kolda"/>
+        </record>
+        <record id="commune_dialambere" model="sn_administrative_division.municipality">
+            <field name="name">DIALAMBERE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kolda"/>
+        </record>
+        <record id="commune_dioulacolon" model="sn_administrative_division.municipality">
+            <field name="name">DIOULACOLON</field>
+            <field name="department_id" ref="sn_administrative_division.department_kolda"/>
+        </record>
+        <record id="commune_guiro_yero_bocar" model="sn_administrative_division.municipality">
+            <field name="name">GUIRO YERO BOCAR</field>
+            <field name="department_id" ref="sn_administrative_division.department_kolda"/>
+        </record>
+        <record id="commune_mampatim" model="sn_administrative_division.municipality">
+            <field name="name">MAMPATIM</field>
+            <field name="department_id" ref="sn_administrative_division.department_kolda"/>
+        </record>
+        <record id="commune_medina_el_hadji" model="sn_administrative_division.municipality">
+            <field name="name">MEDINA EL HADJI</field>
+            <field name="department_id" ref="sn_administrative_division.department_kolda"/>
+        </record>
+        <record id="commune_medina_cherif" model="sn_administrative_division.municipality">
+            <field name="name">MEDINA CHERIF</field>
+            <field name="department_id" ref="sn_administrative_division.department_kolda"/>
+        </record>
+        <record id="commune_sare_bidji" model="sn_administrative_division.municipality">
+            <field name="name">SARE BIDJI</field>
+            <field name="department_id" ref="sn_administrative_division.department_kolda"/>
+        </record>
+        <record id="commune_tankanto_escale" model="sn_administrative_division.municipality">
+            <field name="name">TANKANTO ESCALE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kolda"/>
+        </record>
+        <record id="commune_thietty" model="sn_administrative_division.municipality">
+            <field name="name">THIETTY</field>
+            <field name="department_id" ref="sn_administrative_division.department_kolda"/>
+        </record>
+
+        <record id="commune_badion" model="sn_administrative_division.municipality">
+            <field name="name">BADION</field>
+            <field name="department_id" ref="sn_administrative_division.department_medina_yoro_foulah"/>
+        </record>
+        <record id="commune_bignarabe" model="sn_administrative_division.municipality">
+            <field name="name">BIGNARABE</field>
+            <field name="department_id" ref="sn_administrative_division.department_medina_yoro_foulah"/>
+        </record>
+        <record id="commune_bourouco" model="sn_administrative_division.municipality">
+            <field name="name">BOUROUCO</field>
+            <field name="department_id" ref="sn_administrative_division.department_medina_yoro_foulah"/>
+        </record>
+        <record id="commune_com_medina_yoro_foulah" model="sn_administrative_division.municipality">
+            <field name="name">COM. MEDINA YORO FOULAH</field>
+            <field name="department_id" ref="sn_administrative_division.department_medina_yoro_foulah"/>
+        </record>
+        <record id="commune_com_pata" model="sn_administrative_division.municipality">
+            <field name="name">COM. PATA</field>
+            <field name="department_id" ref="sn_administrative_division.department_medina_yoro_foulah"/>
+        </record>
+        <record id="commune_dinguiraye" model="sn_administrative_division.municipality">
+            <field name="name">DINGUIRAYE</field>
+            <field name="department_id" ref="sn_administrative_division.department_medina_yoro_foulah"/>
+        </record>
+        <record id="commune_fafacourou" model="sn_administrative_division.municipality">
+            <field name="name">FAFACOUROU</field>
+            <field name="department_id" ref="sn_administrative_division.department_medina_yoro_foulah"/>
+        </record>
+        <record id="commune_kerewane" model="sn_administrative_division.municipality">
+            <field name="name">KEREWANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_medina_yoro_foulah"/>
+        </record>
+        <record id="commune_koulinto" model="sn_administrative_division.municipality">
+            <field name="name">KOULINTO</field>
+            <field name="department_id" ref="sn_administrative_division.department_medina_yoro_foulah"/>
+        </record>
+        <record id="commune_ndorna" model="sn_administrative_division.municipality">
+            <field name="name">NDORNA</field>
+            <field name="department_id" ref="sn_administrative_division.department_medina_yoro_foulah"/>
+        </record>
+        <record id="commune_niaming" model="sn_administrative_division.municipality">
+            <field name="name">NIAMING</field>
+            <field name="department_id" ref="sn_administrative_division.department_medina_yoro_foulah"/>
+        </record>
+        
+        <record id="commune_bonconto" model="sn_administrative_division.municipality">
+            <field name="name">BONCONTO</field>
+            <field name="department_id" ref="sn_administrative_division.department_velingara"/>
+        </record>
+        <record id="commune_com_diaoube_kabendou" model="sn_administrative_division.municipality">
+            <field name="name">COM. DIAOUBE- KABENDOU</field>
+            <field name="department_id" ref="sn_administrative_division.department_velingara"/>
+        </record>
+        <record id="commune_com_kounkane" model="sn_administrative_division.municipality">
+            <field name="name">COM. KOUNKANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_velingara"/>
+        </record>
+        <record id="commune_com_velingara" model="sn_administrative_division.municipality">
+            <field name="name">COM. VELINGARA</field>
+            <field name="department_id" ref="sn_administrative_division.department_velingara"/>
+        </record>
+        <record id="commune_kandia" model="sn_administrative_division.municipality">
+            <field name="name">KANDIA</field>
+            <field name="department_id" ref="sn_administrative_division.department_velingara"/>
+        </record>
+        <record id="commune_kandiaye" model="sn_administrative_division.municipality">
+            <field name="name">KANDIAYE</field>
+            <field name="department_id" ref="sn_administrative_division.department_velingara"/>
+        </record>
+        <record id="commune_linkering" model="sn_administrative_division.municipality">
+            <field name="name">LINKERING</field>
+            <field name="department_id" ref="sn_administrative_division.department_velingara"/>
+        </record>
+        <record id="commune_medina_gounass_" model="sn_administrative_division.municipality">
+            <field name="name">MEDINA GOUNASS</field>
+            <field name="department_id" ref="sn_administrative_division.department_velingara"/>
+        </record>
+        <record id="commune_nemataba" model="sn_administrative_division.municipality">
+            <field name="name">NEMATABA</field>
+            <field name="department_id" ref="sn_administrative_division.department_velingara"/>
+        </record>
+        <record id="commune_ouassadou" model="sn_administrative_division.municipality">
+            <field name="name">OUASSADOU</field>
+            <field name="department_id" ref="sn_administrative_division.department_velingara"/>
+        </record>
+        <record id="commune_pakour" model="sn_administrative_division.municipality">
+            <field name="name">PAKOUR</field>
+            <field name="department_id" ref="sn_administrative_division.department_velingara"/>
+        </record>
+        <record id="commune_paroumba" model="sn_administrative_division.municipality">
+            <field name="name">PAROUMBA</field>
+            <field name="department_id" ref="sn_administrative_division.department_velingara"/>
+        </record>
+        <record id="commune_sare_coly_salle" model="sn_administrative_division.municipality">
+            <field name="name">SARE COLY SALLE</field>
+            <field name="department_id" ref="sn_administrative_division.department_velingara"/>
+        </record>
+        <record id="commune_sinthiang_koundara" model="sn_administrative_division.municipality">
+            <field name="name">SINTHIANG KOUNDARA</field>
+            <field name="department_id" ref="sn_administrative_division.department_velingara"/>
+        </record>
+
+        <record id="commune_aoure" model="sn_administrative_division.municipality">
+            <field name="name">AOURE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kanel"/>
+        </record>
+        <record id="commune_bokiladji" model="sn_administrative_division.municipality">
+            <field name="name">BOKILADJI</field>
+            <field name="department_id" ref="sn_administrative_division.department_kanel"/>
+        </record>
+        <record id="commune_com_dembancane" model="sn_administrative_division.municipality">
+            <field name="name">COM. DEMBANCANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kanel"/>
+        </record>
+        <record id="commune_hamady_ounare" model="sn_administrative_division.municipality">
+            <field name="name">COM. HAMADY OUNARE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kanel"/>
+        </record>
+        <record id="commune_com_kanel" model="sn_administrative_division.municipality">
+            <field name="name">COM. KANEL</field>
+            <field name="department_id" ref="sn_administrative_division.department_kanel"/>
+        </record>
+        <record id="commune_com_odobere" model="sn_administrative_division.municipality">
+            <field name="name">COM. ODOBERE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kanel"/>
+        </record>
+        <record id="commune_com_semme" model="sn_administrative_division.municipality">
+            <field name="name">COM. SEMME</field>
+            <field name="department_id" ref="sn_administrative_division.department_kanel"/>
+        </record>
+        <record id="commune_com_sinthiou_bamanbe_banadji" model="sn_administrative_division.municipality">
+            <field name="name">COM. SINTHIOU BAMANBE-BANADJI</field>
+            <field name="department_id" ref="sn_administrative_division.department_kanel"/>
+        </record>
+        <record id="commune_com_waounde" model="sn_administrative_division.municipality">
+            <field name="name">COM. WAOUNDE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kanel"/>
+        </record>
+        <record id="commune_ndendory" model="sn_administrative_division.municipality">
+            <field name="name">NDENDORY</field>
+            <field name="department_id" ref="sn_administrative_division.department_kanel"/>
+        </record>
+        <record id="commune_orkadiere" model="sn_administrative_division.municipality">
+            <field name="name">ORKADIERE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kanel"/>
+        </record>
+        <record id="commune_ouro_sidy" model="sn_administrative_division.municipality">
+            <field name="name">OURO SIDY</field>
+            <field name="department_id" ref="sn_administrative_division.department_kanel"/>
+        </record>
+
+        <record id="commune_agnam_civol" model="sn_administrative_division.municipality">
+            <field name="name">AGNAM-CIVOL</field>
+            <field name="department_id" ref="sn_administrative_division.department_matam"/>
+        </record>
+        <record id="commune_bokidiawe" model="sn_administrative_division.municipality">
+            <field name="name">BOKIDIAWE</field>
+            <field name="department_id" ref="sn_administrative_division.department_matam"/>
+        </record>
+        <record id="commune_com_matam" model="sn_administrative_division.municipality">
+            <field name="name">COM. MATAM</field>
+            <field name="department_id" ref="sn_administrative_division.department_matam"/>
+        </record>
+        <record id="commune_com_nguidilogne" model="sn_administrative_division.municipality">
+            <field name="name">COM. NGUIDILOGNE</field>
+            <field name="department_id" ref="sn_administrative_division.department_matam"/>
+        </record>
+        <record id="commune_ourossogui" model="sn_administrative_division.municipality">
+            <field name="name">COM. OUROSSOGUI</field>
+            <field name="department_id" ref="sn_administrative_division.department_matam"/>
+        </record>
+        <record id="commune_thilogne" model="sn_administrative_division.municipality">
+            <field name="name">COM. THILOGNE</field>
+            <field name="department_id" ref="sn_administrative_division.department_matam"/>
+        </record>
+        <record id="commune_dabia" model="sn_administrative_division.municipality">
+            <field name="name">DABIA</field>
+            <field name="department_id" ref="sn_administrative_division.department_matam"/>
+        </record>
+        <record id="commune_nabadji_civol" model="sn_administrative_division.municipality">
+            <field name="name">NABADJI-CIVOL</field>
+            <field name="department_id" ref="sn_administrative_division.department_matam"/>
+        </record>
+        <record id="commune_ogo" model="sn_administrative_division.municipality">
+            <field name="name">OGO</field>
+            <field name="department_id" ref="sn_administrative_division.department_matam"/>
+        </record>
+        <record id="commune_orefonde" model="sn_administrative_division.municipality">
+            <field name="name">OREFONDE</field>
+            <field name="department_id" ref="sn_administrative_division.department_matam"/>
+        </record>
+
+        <record id="commune_com_ranerou" model="sn_administrative_division.municipality">
+            <field name="name">COM. RANEROU</field>
+            <field name="department_id" ref="sn_administrative_division.department_ranerou"/>
+        </record>  
+        <record id="commune_lougre_thioly" model="sn_administrative_division.municipality">
+            <field name="name">LOUGRE-THIOLY</field>
+            <field name="department_id" ref="sn_administrative_division.department_ranerou"/>
+        </record>        
+        <record id="commune_oudalaye" model="sn_administrative_division.municipality">
+            <field name="name">OUDALAYE</field>
+            <field name="department_id" ref="sn_administrative_division.department_ranerou"/>
+        </record>        
+        <record id="commune_velingara__" model="sn_administrative_division.municipality">
+            <field name="name">VELINGARA</field>
+            <field name="department_id" ref="sn_administrative_division.department_ranerou"/>
+        </record>    
+        
+        <record id="commune_diognick" model="sn_administrative_division.municipality">
+            <field name="name">DIOGNICK</field>
+            <field name="department_id" ref="sn_administrative_division.department_birkelane"/>
+        </record>
+        <record id="commune_com_birkelane" model="sn_administrative_division.municipality">
+            <field name="name">COM .BIRKELANE</field>
+            <field name="department_id" ref="sn_administrative_division.department_birkelane"/>
+        </record>
+        <record id="commune_diamal" model="sn_administrative_division.municipality">
+            <field name="name">DIAMAL</field>
+            <field name="department_id" ref="sn_administrative_division.department_birkelane"/>
+        </record>
+        <record id="commune_keur_mbouki" model="sn_administrative_division.municipality">
+            <field name="name">KEUR M'BOUKI</field>
+            <field name="department_id" ref="sn_administrative_division.department_birkelane"/>
+        </record>
+        <record id="commune_mabo" model="sn_administrative_division.municipality">
+            <field name="name">MABO</field>
+            <field name="department_id" ref="sn_administrative_division.department_birkelane"/>
+        </record>
+        <record id="commune_mbeuleup" model="sn_administrative_division.municipality">
+            <field name="name">MBEULEUP</field>
+            <field name="department_id" ref="sn_administrative_division.department_birkelane"/>
+        </record>
+        <record id="commune_segre_gatta" model="sn_administrative_division.municipality">
+            <field name="name">SEGRE GATTA</field>
+            <field name="department_id" ref="sn_administrative_division.department_birkelane"/>
+        </record>
+        <record id="commune_touba_mbella" model="sn_administrative_division.municipality">
+            <field name="name">TOUBA M'BELLA</field>
+            <field name="department_id" ref="sn_administrative_division.department_birkelane"/>
+        </record>
+
+        <record id="commune_boulel" model="sn_administrative_division.municipality">
+            <field name="name">BOULEL</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaffrine"/>
+        </record>
+        <record id="commune_com_ganda" model="sn_administrative_division.municipality">
+            <field name="name">COM. GANDA</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaffrine"/>
+        </record>
+        <record id="commune_com_kaffrine" model="sn_administrative_division.municipality">
+            <field name="name">COM. KAFFRINE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaffrine"/>
+        </record>
+        <record id="commune_diamagadio" model="sn_administrative_division.municipality">
+            <field name="name">DIAMAGADIO</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaffrine"/>
+        </record>
+        <record id="commune_diokoul_mbelbouck" model="sn_administrative_division.municipality">
+            <field name="name">DIOKOUL M’BELBOUCK</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaffrine"/>
+        </record>
+        <record id="commune_gniby" model="sn_administrative_division.municipality">
+            <field name="name">GNIBY</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaffrine"/>
+        </record>
+        <record id="commune_kahi" model="sn_administrative_division.municipality">
+            <field name="name">KAHI</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaffrine"/>
+        </record>
+        <record id="commune_kathiote" model="sn_administrative_division.municipality">
+            <field name="name">KATHIOTE</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaffrine"/>
+        </record>
+        <record id="commune_medinatoul_salam_2" model="sn_administrative_division.municipality">
+            <field name="name">MEDINATOUL SALAM 2</field>
+            <field name="department_id" ref="sn_administrative_division.department_kaffrine"/>
+        </record>
+
+        <record id="commune_com_koungheul" model="sn_administrative_division.municipality">
+            <field name="name">COM. KOUNGHEUL</field>
+            <field name="department_id" ref="sn_administrative_division.department_koungheul"/>
+        </record>
+        <record id="commune_fass_thiekene" model="sn_administrative_division.municipality">
+            <field name="name">FASS THIEKENE</field>
+            <field name="department_id" ref="sn_administrative_division.department_koungheul"/>
+        </record>
+        <record id="commune_gainthe_pathe" model="sn_administrative_division.municipality">
+            <field name="name">GAINTHE PATHE</field>
+            <field name="department_id" ref="sn_administrative_division.department_koungheul"/>
+        </record>
+        <record id="commune_ida_mouride" model="sn_administrative_division.municipality">
+            <field name="name">IDA MOURIDE</field>
+            <field name="department_id" ref="sn_administrative_division.department_koungheul"/>
+        </record>
+        <record id="commune_lour_escale" model="sn_administrative_division.municipality">
+            <field name="name">LOUR ESCALE</field>
+            <field name="department_id" ref="sn_administrative_division.department_koungheul"/>
+        </record>
+        <record id="commune_maka_yop" model="sn_administrative_division.municipality">
+            <field name="name">MAKA YOP</field>
+            <field name="department_id" ref="sn_administrative_division.department_koungheul"/>
+        </record>
+        <record id="commune_missirah_wadene" model="sn_administrative_division.municipality">
+            <field name="name">MISSIRAH WADENE</field>
+            <field name="department_id" ref="sn_administrative_division.department_koungheul"/>
+        </record>
+        <record id="commune_ribot_escale" model="sn_administrative_division.municipality">
+            <field name="name">RIBOT ESCALE</field>
+            <field name="department_id" ref="sn_administrative_division.department_koungheul"/>
+        </record>
+        <record id="commune_saly_escale" model="sn_administrative_division.municipality">
+            <field name="name">SALY ESCALE</field>
+            <field name="department_id" ref="sn_administrative_division.department_koungheul"/>
+        </record>
+
+        <record id="commune_dioum_gainth" model="sn_administrative_division.municipality">
+            <field name="name">DIOUM GAINTH</field>
+            <field name="department_id" ref="sn_administrative_division.department_malem_hoddar"/>
+        </record>
+        <record id="commune_com_malem_hoddar" model="sn_administrative_division.municipality">
+            <field name="name">COM. MALEM HODDAR</field>
+            <field name="department_id" ref="sn_administrative_division.department_malem_hoddar"/>
+        </record>
+        <record id="commune_darou_minam_2" model="sn_administrative_division.municipality">
+            <field name="name">DAROU MINAM II</field>
+            <field name="department_id" ref="sn_administrative_division.department_malem_hoddar"/>
+        </record>
+        <record id="commune_dianke_souf" model="sn_administrative_division.municipality">
+            <field name="name">DIANKE SOUF</field>
+            <field name="department_id" ref="sn_administrative_division.department_malem_hoddar"/>
+        </record>
+        <record id="commune_khelcom" model="sn_administrative_division.municipality">
+            <field name="name">KHELCOM</field>
+            <field name="department_id" ref="sn_administrative_division.department_malem_hoddar"/>
+        </record>
+        <record id="commune_ndiobene_samba_lamo" model="sn_administrative_division.municipality">
+            <field name="name">NDIOBENE SAMBA LAMO</field>
+            <field name="department_id" ref="sn_administrative_division.department_malem_hoddar"/>
+        </record>
+        <record id="commune_sagna" model="sn_administrative_division.municipality">
+            <field name="name">SAGNA</field>
+            <field name="department_id" ref="sn_administrative_division.department_malem_hoddar"/>
+        </record>
+
+        <record id="commune_bandafassi" model="sn_administrative_division.municipality">
+            <field name="name">BANDAFASSI</field>
+            <field name="department_id" ref="sn_administrative_division.department_kedougou"/>
+        </record>
+        <record id="commune_com_kedougou" model="sn_administrative_division.municipality">
+            <field name="name">COM. KEDOUGOU</field>
+            <field name="department_id" ref="sn_administrative_division.department_kedougou"/>
+        </record>
+        <record id="commune_dimboli_" model="sn_administrative_division.municipality">
+            <field name="name">DIMBOLI</field>
+            <field name="department_id" ref="sn_administrative_division.department_kedougou"/>
+        </record>
+        <record id="commune_dindifelo" model="sn_administrative_division.municipality">
+            <field name="name">DINDIFELO</field>
+            <field name="department_id" ref="sn_administrative_division.department_kedougou"/>
+        </record>
+        <record id="commune_fongolembi" model="sn_administrative_division.municipality">
+            <field name="name">FONGOLEMBI</field>
+            <field name="department_id" ref="sn_administrative_division.department_kedougou"/>
+        </record>
+        <record id="commune_ninefecha" model="sn_administrative_division.municipality">
+            <field name="name">NINEFECHA</field>
+            <field name="department_id" ref="sn_administrative_division.department_kedougou"/>
+        </record>
+        <record id="commune_tomboronkoto" model="sn_administrative_division.municipality">
+            <field name="name">TOMBORONKOTO</field>
+            <field name="department_id" ref="sn_administrative_division.department_kedougou"/>
+        </record>
+
+        <record id="commune_salemata" model="sn_administrative_division.municipality">
+            <field name="name">COM. SALEMATA</field>
+            <field name="department_id" ref="sn_administrative_division.department_salemata"/>
+        </record>
+        <record id="commune_dakateli" model="sn_administrative_division.municipality">
+            <field name="name">DAKATELI</field>
+            <field name="department_id" ref="sn_administrative_division.department_salemata"/>
+        </record>
+        <record id="commune_dar_salam__" model="sn_administrative_division.municipality">
+            <field name="name">DAR SALAM</field>
+            <field name="department_id" ref="sn_administrative_division.department_salemata"/>
+        </record>
+        <record id="commune_ethiolo" model="sn_administrative_division.municipality">
+            <field name="name">ETHIOLO</field>
+            <field name="department_id" ref="sn_administrative_division.department_salemata"/>
+        </record>
+        <record id="commune_kevoye" model="sn_administrative_division.municipality">
+            <field name="name">KEVOYE</field>
+            <field name="department_id" ref="sn_administrative_division.department_salemata"/>
+        </record>
+        <record id="commune_oubadji" model="sn_administrative_division.municipality">
+            <field name="name">OUBADJI</field>
+            <field name="department_id" ref="sn_administrative_division.department_salemata"/>
+        </record>
+
+        <record id="commune_bembou" model="sn_administrative_division.municipality">
+            <field name="name">BEMBOU</field>
+            <field name="department_id" ref="sn_administrative_division.department_saraya"/>
+        </record>
+        <record id="commune_com_saraya" model="sn_administrative_division.municipality">
+            <field name="name">COM. SARAYA</field>
+            <field name="department_id" ref="sn_administrative_division.department_saraya"/>
+        </record>
+        <record id="commune_khossanto" model="sn_administrative_division.municipality">
+            <field name="name">KHOSSANTO</field>
+            <field name="department_id" ref="sn_administrative_division.department_saraya"/>
+        </record>
+        <record id="commune_medina_baffe" model="sn_administrative_division.municipality">
+            <field name="name">MEDINA BAFFE</field>
+            <field name="department_id" ref="sn_administrative_division.department_saraya"/>
+        </record>
+        <record id="commune_missirah_sirimana" model="sn_administrative_division.municipality">
+            <field name="name">MISSIRAH SIRIMANA</field>
+            <field name="department_id" ref="sn_administrative_division.department_saraya"/>
+        </record>
+        <record id="commune_sabodala" model="sn_administrative_division.municipality">
+            <field name="name">SABODALA</field>
+            <field name="department_id" ref="sn_administrative_division.department_saraya"/>
+        </record>
+
+        <record id="commune_boghal" model="sn_administrative_division.municipality">
+            <field name="name">BOGHAL</field>
+            <field name="department_id" ref="sn_administrative_division.department_bounkiling"/>
+        </record>
+        <record id="commune_bona" model="sn_administrative_division.municipality">
+            <field name="name">BONA</field>
+            <field name="department_id" ref="sn_administrative_division.department_bounkiling"/>
+        </record>
+        <record id="commune_bounkiling" model="sn_administrative_division.municipality">
+            <field name="name">COM. BOUNKILING</field>
+            <field name="department_id" ref="sn_administrative_division.department_bounkiling"/>
+        </record>
+        <record id="commune_com_madina_wandifa" model="sn_administrative_division.municipality">
+            <field name="name">COM. MADINA WANDIFA</field>
+            <field name="department_id" ref="sn_administrative_division.department_bounkiling"/>
+        </record>
+        <record id="commune_com_ndiamacouta" model="sn_administrative_division.municipality">
+            <field name="name">COM. NDIAMACOUTA</field>
+            <field name="department_id" ref="sn_administrative_division.department_bounkiling"/>
+        </record>
+        <record id="commune_diacounda" model="sn_administrative_division.municipality">
+            <field name="name">DIACOUNDA</field>
+            <field name="department_id" ref="sn_administrative_division.department_bounkiling"/>
+        </record>
+        <record id="commune_diambaty" model="sn_administrative_division.municipality">
+            <field name="name">DIAMBATY</field>
+            <field name="department_id" ref="sn_administrative_division.department_bounkiling"/>
+        </record>
+        <record id="commune_diaroume" model="sn_administrative_division.municipality">
+            <field name="name">DIAROUME</field>
+            <field name="department_id" ref="sn_administrative_division.department_bounkiling"/>
+        </record>
+        <record id="commune_djinany" model="sn_administrative_division.municipality">
+            <field name="name">DJINANY</field>
+            <field name="department_id" ref="sn_administrative_division.department_bounkiling"/>
+        </record>
+        <record id="commune_faoune" model="sn_administrative_division.municipality">
+            <field name="name">FAOUNE</field>
+            <field name="department_id" ref="sn_administrative_division.department_bounkiling"/>
+        </record>
+        <record id="commune_inor" model="sn_administrative_division.municipality">
+            <field name="name">INOR</field>
+            <field name="department_id" ref="sn_administrative_division.department_bounkiling"/>
+        </record>
+        <record id="commune_kandion_mangana" model="sn_administrative_division.municipality">
+            <field name="name">KANDION MANGANA</field>
+            <field name="department_id" ref="sn_administrative_division.department_bounkiling"/>
+        </record>
+        <record id="commune_ndiamalathiel" model="sn_administrative_division.municipality">
+            <field name="name">NDIAMALATHIEL</field>
+            <field name="department_id" ref="sn_administrative_division.department_bounkiling"/>
+        </record>
+        <record id="commune_tankon" model="sn_administrative_division.municipality">
+            <field name="name">TANKON</field>
+            <field name="department_id" ref="sn_administrative_division.department_bounkiling"/>
+        </record>
+
+        <record id="commune_baghere" model="sn_administrative_division.municipality">
+            <field name="name">BAGHERE</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudomp"/>
+        </record>
+        <record id="commune_com_diattacounda" model="sn_administrative_division.municipality">
+            <field name="name">COM. DIATTACOUNDA</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudomp"/>
+        </record>
+        <record id="commune_com_goudomp" model="sn_administrative_division.municipality">
+            <field name="name">COM. GOUDOMP</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudomp"/>
+        </record>
+        <record id="commune_com_samine" model="sn_administrative_division.municipality">
+            <field name="name">COM. SAMINE</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudomp"/>
+        </record>
+        <record id="commune_com_tanaff" model="sn_administrative_division.municipality">
+            <field name="name">COM. TANAFF</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudomp"/>
+        </record>
+        <record id="commune_diouboudou_" model="sn_administrative_division.municipality">
+            <field name="name">DIOUBOUDOU</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudomp"/>
+        </record>
+        <record id="commune_djibanar" model="sn_administrative_division.municipality">
+            <field name="name">DJIBANAR</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudomp"/>
+        </record>
+        <record id="commune_kaour" model="sn_administrative_division.municipality">
+            <field name="name">KAOUR</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudomp"/>
+        </record>
+        <record id="commune_karantaba" model="sn_administrative_division.municipality">
+            <field name="name">KARANTABA</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudomp"/>
+        </record>
+        <record id="commune_kolibantang" model="sn_administrative_division.municipality">
+            <field name="name">KOLIBANTANG</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudomp"/>
+        </record>
+        <record id="commune_mangaroungou_santo" model="sn_administrative_division.municipality">
+            <field name="name">MANGAROUNGOU SANTO</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudomp"/>
+        </record>
+        <record id="commune_niagha" model="sn_administrative_division.municipality">
+            <field name="name">NIAGHA</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudomp"/>
+        </record>
+        <record id="commune_simbadi_balante" model="sn_administrative_division.municipality">
+            <field name="name">SIMBADI BALANTE</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudomp"/>
+        </record>
+        <record id="commune_simbandi_brassou" model="sn_administrative_division.municipality">
+            <field name="name">SIMBANDI BRASSOU</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudomp"/>
+        </record>
+        <record id="commune_yarang_balante" model="sn_administrative_division.municipality">
+            <field name="name">YARANG BALANTE</field>
+            <field name="department_id" ref="sn_administrative_division.department_goudomp"/>
+        </record>
+
+        <record id="commune_bambali" model="sn_administrative_division.municipality">
+            <field name="name">BAMBALI</field>
+            <field name="department_id" ref="sn_administrative_division.department_sedhiou"/>
+        </record>
+        <record id="commune_benet_bijini" model="sn_administrative_division.municipality">
+            <field name="name">BENET- BIJINI</field>
+            <field name="department_id" ref="sn_administrative_division.department_sedhiou"/>
+        </record>
+        <record id="commune_com_dianah_malary" model="sn_administrative_division.municipality">
+            <field name="name">COM. DIANAH MALARY</field>
+            <field name="department_id" ref="sn_administrative_division.department_sedhiou"/>
+        </record>
+        <record id="commune_com_marsassoum" model="sn_administrative_division.municipality">
+            <field name="name">COM. MARSASSOUM</field>
+            <field name="department_id" ref="sn_administrative_division.department_sedhiou"/>
+        </record>
+        <record id="commune_com_sedhiou_" model="sn_administrative_division.municipality">
+            <field name="name">COM. SEDHIOU</field>
+            <field name="department_id" ref="sn_administrative_division.department_sedhiou"/>
+        </record>
+        <record id="commune_diannah_ba" model="sn_administrative_division.municipality">
+            <field name="name">DIANNAH BA</field>
+            <field name="department_id" ref="sn_administrative_division.department_sedhiou"/>
+        </record>
+        <record id="commune_diende" model="sn_administrative_division.municipality">
+            <field name="name">DIENDE</field>
+            <field name="department_id" ref="sn_administrative_division.department_sedhiou"/>
+        </record>
+        <record id="commune_djibabouya" model="sn_administrative_division.municipality">
+            <field name="name">DJIBABOUYA</field>
+            <field name="department_id" ref="sn_administrative_division.department_sedhiou"/>
+        </record>
+        <record id="commune_djiredji__" model="sn_administrative_division.municipality">
+            <field name="name">DJIREDJI</field>
+            <field name="department_id" ref="sn_administrative_division.department_sedhiou"/>
+        </record>
+        <record id="commune_koussy_" model="sn_administrative_division.municipality">
+            <field name="name">KOUSSY</field>
+            <field name="department_id" ref="sn_administrative_division.department_sedhiou"/>
+        </record>
+        <record id="commune_oudoucar_" model="sn_administrative_division.municipality">
+            <field name="name">OUDOUCAR</field>
+            <field name="department_id" ref="sn_administrative_division.department_sedhiou"/>
+        </record>
+        <record id="commune_sakar_" model="sn_administrative_division.municipality">
+            <field name="name">SAKAR</field>
+            <field name="department_id" ref="sn_administrative_division.department_sedhiou"/>
+        </record>
+        <record id="commune_sama_kanta_peulh" model="sn_administrative_division.municipality">
+            <field name="name">SAMA KANTA PEULH</field>
+            <field name="department_id" ref="sn_administrative_division.department_sedhiou"/>
+        </record>
+        <record id="commune_sansamba" model="sn_administrative_division.municipality">
+            <field name="name">SANSAMBA</field>
+            <field name="department_id" ref="sn_administrative_division.department_sedhiou"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,244 @@
+.o_customisable_workflow_report_event {
+    border: 1px solid $gray-700;
+    background-color: white;
+    min-height: 60px;
+    margin-bottom: 35px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .event-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .header-status {
+            display: flex;
+            flex-direction: row;
+            flex-flow: row wrap;
+            border-bottom: 1px solid $gray-700;
+            padding: 5px;
+            .header-action {
+                display: flex;
+                text-align: right;
+                flex-wrap: wrap;
+                justify-content: end;
+                flex-grow: 1;
+                .btn {
+                    padding: 0 10px 0 10px;
+                }
+            }
+        }
+        .header-title {
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid $gray-700;
+            color: white;
+            padding: 5px;
+            background-color: $gray-600;
+            .event-type {
+                margin-right: 5px;
+                flex-shrink: 1;
+                display: flex;
+                align-items: center;
+                margin: auto;
+            }
+
+        }
+    }
+    .event-stage{
+        padding: 5px;
+    }
+    .event-details {
+        width: 100%;
+        min-height: 50px;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: nowrap;
+        align-items: stretch;
+        padding: 5px;
+        .point {
+            flex-grow: 1;
+            flex: 50%;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            min-height: 100px;
+            text-align: center;
+            justify-content: center;
+            &:last-child {
+                border-left: 1px solid $gray-700;
+            }
+            .o_m2o_avatar {
+                min-height: 36px;
+                min-width: 36px;
+                > img {
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    object-fit: cover;
+                    margin-right: 4px;
+                }
+            }
+            .doc {
+                position: relative;
+                .o_image {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    z-index: 0;
+                    &:hover ~ .hide {
+                        display: block;
+                    }
+                }
+                .blur_image {
+                    -webkit-filter: blur(4px);
+                    filter: blur(4px);
+                }
+                .document_actions {
+                    position: absolute;
+                    .download {
+                        position: absolute;
+                        bottom: 9px;
+                        left: calc(#{$o-kanban-small-record-width}/8 + 12px);
+                        cursor: pointer;
+                        color: #{$primary};
+                    }
+                    .preview {
+                        position: absolute;
+                        bottom: 9px;
+                        left: calc(#{$o-kanban-small-record-width}/8 + 37px);
+                        cursor: zoom-in;
+                        color: #{$primary};
+                    }
+                    .update {
+                        position: absolute;
+                        bottom: 40px;
+                        left: calc(#{$o-kanban-small-record-width}/8 + 25px);
+                        cursor: pointer;
+                        color: #{$primary};
+                    }
+                }
+                .hide {
+                    display: none;
+                    &:hover {
+                        display: block;
+                    }
+                  }
+            }
+            .doc_details {
+                display: grid;
+                grid-template-rows: repeat(var(--rows, 1), 1fr);
+                grid-template-columns: fit-content(150px) minmax(0, 1fr);
+                --columns: 1;
+                gap: 4px 4px;
+                margin-bottom: 8px;
+                text-align: left;
+                .doc_field {
+                    display: contents !important;
+                }
+
+            }
+            .res-docs {
+                display: flex;
+                flex-direction: row;
+                .download {
+                    display: flex;
+                    align-items: flex-end;
+                    padding-bottom: 5px;
+                    cursor: pointer;
+                }
+                .o_preview {
+                    cursor: zoom-in;
+                }
+            }
+            .user{
+                padding-bottom: 2px;
+                .o_avatar{
+                    display: flex;
+                    flex-direction: row;
+                    cursor: pointer;
+                }
+            }
+        }
+        .point_right {
+            padding-left: 5px;
+        }
+        .update {
+            cursor: pointer;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 5px;
+            padding-right: 3px;
+        }
+    }
+    .history_action {
+        border-top: 1px solid $gray-700;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        .history-button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-grow: 0 !important;
+            padding-top: 0;
+            padding-bottom: 0;
+            height: 2.0625rem;
+            .o_button_icon {
+                font-size: 1.5em;
+                transform: rotate(-45deg);
+                color: var(--o-stat-button-color, #{$primary});
+            }
+            .statinfo {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                flex-direction: column;
+                max-width: 100%;
+                text-align: left;
+                font-weight: 400;
+                line-height: 1;
+                .o_stat_value {
+                    order: 2;
+                    font-weight: 500;
+                    color: var(--o-stat-text-color, #{$primary});
+                    font-size: 0.75rem;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -webkit-flex-direction: column;
+                    flex-direction: column;
+                    max-width: 100%;
+                    text-align: left;
+                    color: var(--o-stat-button-color, #{$primary});
+                }
+                .o_stat_text {
+                    display: block;
+                    max-width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    order: 1;
+                    font-size: 0.75rem;
+                    line-height: 1.25;
+                }
+            }
+        }
+    }
+}
+
+.o_customisable_workflow_report_history-event::before {
+    content: "";
+    height: 0px;
+    width: 0px;
+    border-bottom: 30px solid $gray-700;
+    border-top: 30px solid transparent;
+    border-left: calc(#{$o-kanban-small-record-width}/4) solid transparent;
+    border-right: calc(#{$o-kanban-small-record-width}/4) solid transparent;
+    bottom: auto;
+    right: auto;
+    top: -65px;
+    left: calc((#{$o-kanban-small-record-width} - 10px)/4);
+    position: absolute;
+    pointer-events: none;
+}
+

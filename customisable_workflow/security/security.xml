@@ -1,0 +1,14 @@
+<odoo>    
+    <data>
+        <record id="generated_document_access_manager_portal" model="ir.rule">
+            <field name="name">Access generated document: Portal</field>
+            <field name="model_id" ref="model_customisable_workflow_work_generated_document"/>
+            <field name="domain_force">[('document_id.allowed_group_ids','in',user.group_ids.ids)]</field>
+            <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_unlink" eval="False"/>
+        </record>
+    </data>    
+</odoo>            

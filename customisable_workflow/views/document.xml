@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="customisable_workflow_document_tree_view" model="ir.ui.view">
+            <field name="name">customisable_workflow_document.view.tree</field>
+            <field name="model">customisable_workflow.document</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+                    <field name="document_type_id"/>
+                    <field name="is_required"/>
+                    <field name="document"/>
+                    <field name="document_format_to_generate"/>
+                    <field name="source"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="customisable_workflow_document_form_view" model="ir.ui.view">
+            <field name="name">customisable_workflow_document.view.form</field>
+            <field name="model">customisable_workflow.document</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="source" widget='radio' options="{'horizontal': true}"/>
+                        </group>
+                        <group invisible="source == 'generated'">
+                            <group>
+                                <field name="name" required="source=='provided'"/>
+                                <field name="document_type_id"/>
+                            </group>
+                            <group>
+                                <field name="is_required"/>
+                            </group>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="name" required="source == 'generated'" invisible="source=='provided'"/>
+                                <field name="allowed_group_ids" widget="many2many_tags" />
+                                <field name="document_format_to_generate"  invisible="source=='provided'"/>
+                            </group>
+                            <group>
+                                <field name="document" options="{'accepted_file_extensions': '.docx'}"/>
+                                <div>OU</div>
+                                <field name="report_id"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="customisable_workflow_document" model="ir.actions.act_window">
+            <field name="name">Documents</field>
+            <field name="res_model">customisable_workflow.document</field>
+            <field name="view_mode">list,form</field>
+            <field name="context">{}</field>
+        </record>
+
+        <menuitem name="Documents" id="document_menu" parent="menu_customisable_workflow_configuration"
+            action="customisable_workflow_document"/>  
+
+    </data>
+</odoo>

@@ -1,0 +1,19 @@
+<odoo>
+
+    <record id="group_user_checker" model="res.groups">
+        <field name="name">Vérificateur</field>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]" />
+    </record>
+
+    <record model="ir.rule" id="checker_rule_checklist_response">
+        <field name="name">Restricted Record checker of checklist </field>
+        <field name="model_id" ref="model_workflow_checklist_checklist_response" />
+        <field name="groups" eval="[(4, ref('workflow_checklist.group_user_checker'))]" />
+        <field name="domain_force"> [('checker_ids','in',user.id)]</field>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_create" eval="0"/>
+            <field name="perm_unlink" eval="0"/>
+    </record>
+
+</odoo>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="justification_form_view">
+            <field name="name">justification.form</field>
+            <field name="model">customisable_workflow.justification_wizard</field>
+            <field name="arch" type="xml">
+                <form string="Justification">
+                    <group>
+                        <field name="justification"/>                     
+                    </group>
+                    <footer>
+                        <button name="save" type="object" string="Enregistrer" class="oe_highlight"/>
+                        <button special="cancel" string="Annuler"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

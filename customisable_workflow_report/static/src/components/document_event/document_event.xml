@@ -1,0 +1,17 @@
+<templates id="template" xml:space="preserve">
+    <t t-name="customisable_workflow_report.DocumentEventWidget">
+        <div class="events-container">
+            <div class="event-groups groups-title" t-ref="groups-title">
+                <t t-foreach="titles" t-as="title" t-key="title">
+                    <GroupTitle title="title"/>
+                </t>
+            </div>
+            <div class="event-groups groups-body">
+                <t t-foreach="events_groups" t-as="group" t-key="group.group[0]">
+                    <Group group="group" work="props.record.data"/>
+                </t>
+            </div>
+        </div>
+        
+    </t>
+</templates>

@@ -1,0 +1,36 @@
+<odoo>
+    <record id="view_payment_natureform" model="ir.ui.view">
+        <field name="name">payment.nature.form</field>
+        <field name="model">payment.nature</field>
+        <field name="arch" type="xml">
+            <form string="Nature du Paiement">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="view_payment_naturetree" model="ir.ui.view">
+        <field name="name">payment.nature.list</field>
+        <field name="model">payment.nature</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="collection_payment_nature_action" model="ir.actions.act_window">
+        <field name="name">Nature du Paiement</field>
+        <field name="res_model">payment.nature</field>
+        <field name="view_mode">list</field>
+    </record>
+    <menuitem 
+        name="Nature du Paiement" 
+        id="collection_payment_nature" 
+        parent="menu_configuration" 
+        action="collection_payment_nature_action"/>
+</odoo>

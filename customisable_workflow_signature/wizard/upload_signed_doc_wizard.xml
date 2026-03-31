@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="upload_signed_doc_wizard_form_view">
+        <field name="name">upload_signed_doc_wizard.form</field>
+        <field name="model">customisable_workflow_signature.upload_signed_doc_wizard</field>
+        <field name="arch" type="xml">
+            <form string="Document signé">
+                <group>
+                    <group>
+                        <field name="document_filename" invisible="1" /> 
+                        <field name="result_document" widget="binary" filename="document_filename" />   
+                    </group>                       
+                </group> 
+                <footer>
+                    <button name="save" type="object" string="Confirmer" class="oe_highlight"/>
+                    <button special="cancel" string="Annuler"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="upload_signed_doc_wizard_menu" model="ir.actions.act_window"> 
+        <field name="name">Document signé</field>
+        <field name="res_model">customisable_workflow_signature.upload_signed_doc_wizard</field>
+        <field name="view_mode">form</field> 
+        <field name="view_id" ref="upload_signed_doc_wizard_form_view"/>
+        <field name="target">new</field> 
+    </record>
+    
+    
+</odoo>

@@ -1,0 +1,15 @@
+# Translation override for "Create a resume line"
+# Module: collection_disputes_base
+# Language: French
+
+#. module: hr_skills
+#. odoo-javascript
+#: code:addons/hr_skills/static/src/fields/resume_one2many/resume_one2many.xml:0
+msgid "Create Resume Lines" 
+msgstr "Créer des lignes d'intervention"
+
+#. module: hr_skills
+#. odoo-javascript
+#: code:addons/hr_skills/static/src/fields/resume_one2many/resume_one2many.js:0
+msgid "New Resume Line"
+msgstr "Nouvelle ligne d'intervention"

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_collection_disputes_additional_fee_form" model="ir.ui.view">
+            <field name="name">collection_disputes_base.additional_fee.form</field>
+            <field name="model">collection_disputes_base.additional_fee</field>
+            <field name="arch" type="xml">
+                <form string="Frais annexe">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="dispute_case_id" invisible="1"/>
+                                <field name="legal_dispute_id" invisible="1"/>
+                                <field name="date"/>
+                                <field name="amount"/>
+                                <field name="currency_id"/>      
+                            </group>
+                            <group>
+                                <field name="fee_type" widget="radio" options="{'horizontal': true}"/>
+                                <field name="auxiliary_id" invisible="fee_type == 'procedure'" />
+                                <field name="attachment_ids" widget="many2many_binary"/>
+
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_collection_disputes_additional_fee_tree" model="ir.ui.view">
+            <field name="name">collection_disputes_base.additional_fee.list</field>
+            <field name="model">collection_disputes_base.additional_fee</field>
+            <field name="arch" type="xml">
+                <list create="false">
+                    <field name="dispute_case_id"/>
+                    <field name="legal_dispute_id"/>
+                    <field name="date"/>
+                    <field name="amount"/>
+                    <field name="fee_type"/>
+                    <field name="auxiliary_id"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="action_collection_disputes_additional_fee" model="ir.actions.act_window">
+            <field name="name">Frais annexes</field>
+            <field name="res_model">collection_disputes_base.additional_fee</field>
+            <field name="view_mode">list,form</field>
+            <field name="context">{}</field>
+            <field name="domain">[]</field>
+        </record>
+
+        <menuitem id="menu_collection_disputes_additional_fee"
+              name="Frais annexes"
+              parent="menu_stakeholders"
+              action="action_collection_disputes_additional_fee"
+              sequence="30"/>
+
+
+    </data>
+</odoo>

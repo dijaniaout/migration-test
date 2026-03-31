@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="work_generated_document_form_view" model="ir.ui.view">
+        <field name="name">work_generated_document.view.form</field>
+        <field name="model">customisable_workflow.work_generated_document</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <field name="attachment_pdf" widget="pdf_viewer" nolabel="1" invisible="format == 'pdf'"/>
+                    <field name="attachment" widget="pdf_viewer" nolabel="1" invisible="format != 'pdf'"/>
+                    <field name="format" invisible="1"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

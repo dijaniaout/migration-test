@@ -1,0 +1,10 @@
+<odoo>
+
+    <menuitem id="menu_asset_root_config" name="Immobilisation" parent="accountant.menu_accounting" sequence="5">
+        <menuitem id="account_asset.menu_action_account_asset_model_form" name="Modèles d'immobilisations" sequence="1"/>
+        <menuitem id="account_asset.menu_action_account_asset_form" name="Immobilisation" sequence="2"/>
+        <menuitem id="menu_asset_site" name="Sites" action="action_asset_site" sequence="3"/>
+        <menuitem id="menu_asset_inventory_list" name="Inventaires"  action="action_asset_inventory" sequence="4"/>
+    </menuitem>
+    
+</odoo>

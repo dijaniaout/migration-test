@@ -1,0 +1,17 @@
+.tab-pane {
+    overflow-x: auto;
+}
+.events-container{
+    display: flex;
+    flex-direction: column;
+    .event-groups {
+        display: flex;
+        flex-direction: row;
+        .event-documents {
+            border-right: 2px solid $gray-700;
+            &:first-child {
+                border-left: 2px solid $gray-700;
+            }
+        }
+    }
+}

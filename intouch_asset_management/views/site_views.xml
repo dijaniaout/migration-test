@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+    
+        <!-- list -->
+        <record id="view_asset_site_list" model="ir.ui.view">
+            <field name="name">asset.site.list</field>
+            <field name="model">asset.site</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="company_id"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- FORM -->
+        <record id="view_asset_site_form" model="ir.ui.view">
+            <field name="name">asset.site.form</field>
+            <field name="model">asset.site</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button name="action_view_assets"
+                                    type="object"
+                                    class="oe_stat_button"
+                                    icon="fa-cubes">
+                                <field name="asset_count" widget="statinfo" string="Immobilisations"/>
+                            </button>
+                        </div>
+
+                        <group>
+                            <group>
+                                <field name="code"/>
+                                <field name="name"/>
+                                <field name="company_id"/>
+                            </group>
+                            <group string="Géolocalisation">
+                                <field name="latitude"/>
+                                <field name="longitude"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Étages">
+                                <field name="floor_ids">
+                                    <list editable="bottom">
+                                        <field name="name"/>
+                                        <field name="code"/>
+                                    </list>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- ACTION -->
+        <record id="action_asset_site" model="ir.actions.act_window">
+            <field name="name">Sites</field>
+            <field name="res_model">asset.site</field>
+            <field name="view_mode">list,form</field>
+        </record>  
+    
+    </data>
+    
+
+</odoo>

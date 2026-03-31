@@ -1,0 +1,45 @@
+# -*- coding: utf-8 -*-
+{
+    'name': 'Gestion des processus de traitement de dossiers',
+    'version': '19.0.1.0.0',
+    'summary': """Module pour la gestion des processus de traitement de dossiers""",
+    'description': """
+        Ce module permet la gestion des processus de traitement de dossiers
+    """,
+    'category': 'Productivity',
+    'author': 'Baamtu',
+    'maintainer': 'Baamtu',
+    'website': 'http://www.baamtu.com',
+    'license': 'LGPL-3',
+    'depends': [ 'base','mail','report_docx',
+    ],
+    'data': [
+        'security/ir.model.access.csv',
+        'security/security.xml',
+        'views/res_users.xml',
+        'views/menu.xml',
+        'views/document_type.xml',        
+        'views/workflow.xml',
+        'views/step.xml',
+        'views/step_decision.xml',
+        'views/document.xml',
+        'views/work_generated_document.xml',
+        'views/notification_type.xml',
+        'views/transition_rule.xml',
+        'views/condition.xml',
+        'views/dunning_rule.xml',
+        'wizard/justification.xml',
+        'report/menu_report.xml',
+    ],
+    'assets': {
+        'web.assets_backend': [
+            'customisable_workflow/static/src/**/*',
+        ],
+    },
+    'demo': [],
+    'qweb': [],
+    'images': [],
+    'installable': True,
+    'application': False,
+    'auto_install': False,
+}
