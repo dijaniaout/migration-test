@@ -1,0 +1,27 @@
+<odoo>
+  <data>
+
+    <!-- Vue liste dédiée avec le toggle d’activation -->
+    <record id="view_res_currency_tree_cdm" model="ir.ui.view">
+      <field name="name">res.currency.list.cdm</field>
+      <field name="model">res.currency</field>
+      <field name="arch" type="xml">
+        <list editable="bottom">
+          <field name="name"/>
+          <field name="symbol"/>
+          <field name="position"/>
+          <field name="rounding"/>
+          <field name="active" widget="boolean_toggle"/>
+        </list>
+      </field>
+    </record>
+
+    <!-- Menu sous Configuration -->
+    <menuitem id="menu_currency_config"
+              name="Devises"
+              parent="menu_configuration"
+              action="base.action_currency_form"
+              sequence="10"
+              />
+  </data>
+</odoo>

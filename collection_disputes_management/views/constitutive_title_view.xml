@@ -1,0 +1,45 @@
+<odoo>
+    <!-- Vue Formulaire -->
+    <record id="view_guarantee_constitutive_title_form" model="ir.ui.view">
+        <field name="name">guarantee.constitutive.title.form</field>
+        <field name="model">guarantee.constitutive.title</field>
+        <field name="arch" type="xml">
+            <form string="Titre constitutif de garantie">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                        <field name="active"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vue Liste -->
+    <record id="view_guarantee_constitutive_title_tree" model="ir.ui.view">
+        <field name="name">guarantee.constitutive.title.list</field>
+        <field name="model">guarantee.constitutive.title</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="guarantee_constitutive_title_action" model="ir.actions.act_window">
+        <field name="name">Titres constitutifs</field>
+        <field name="res_model">guarantee.constitutive.title</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Menu -->
+    <menuitem 
+        id="menu_guarantee_constitutive_title" 
+        name="Titres constitutifs" 
+        parent="menu_configuration" 
+        action="guarantee_constitutive_title_action"/>
+</odoo>

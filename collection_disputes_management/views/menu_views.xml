@@ -1,0 +1,22 @@
+<odoo>
+    <menuitem 
+        id="menu_collection_disputes_management_root" 
+        name="Recouvrements" 
+        sequence="1"
+        web_icon="collection_disputes_management,static/description/icon.png"/>
+    
+    <menuitem id="menu_collateral_root" 
+        name="Garanties" parent="collection_disputes_management.menu_collection_disputes_management_root" 
+        sequence="2"/>
+    <menuitem id="menu_stakeholders" 
+        name="Parties prenantes" 
+        parent="menu_collection_disputes_management_root" 
+        sequence="3"/>
+    <menuitem id="menu_configuration" 
+        name="Configuration" 
+        parent="menu_collection_disputes_management_root" 
+        sequence="4"/>
+
+    <menuitem name="Processus de traitement" id="customisable_workflow.menu_customisable_workflow_configuration" parent="menu_configuration" sequence="100"/>
+
+</odoo>
